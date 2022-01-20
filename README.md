@@ -34,8 +34,8 @@ You must sleep at V's apartment to regenerate his fatigue. (You can also rest on
 
 - Finish the translation
 - Rework HUD
-- Add dirtiness management
-- More complex metabolism
+- Dirtiness management
+- Option that allows to die from deficiencies
 - Link player's actions (like sprinting, sex scene)
 - Link player's attributes and player's cyber-mods
 - Housing ? (craft only in V's apartment)
