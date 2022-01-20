@@ -10,7 +10,7 @@ It's brings more gameplay/immersion with character needs.
 - Penalties according to character's needs level (however it can't kill you)
 - Dynamic status notification
 - Settings menu
-- Multi-langugage support (currently EN, FR, DE is supported, more to come)
+- Multi-language support (currently EN, FR, DE is supported, more to come)
 
 
 ## Installation
