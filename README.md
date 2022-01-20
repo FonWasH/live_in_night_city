@@ -27,7 +27,7 @@ It's brings more gameplay/immersion with character needs.
 
 You can bind a hotkey in Cyber Engine Tweaks settings to display notifications as you wish.  
 You must drink and eat to regenerate V's thirst and hunger.  
-You must sleep at V's apartment to regenerate his fatigue. (You also rest on the sofa)
+You must sleep at V's apartment to regenerate his fatigue. (You can also rest on the sofa)
 
 
 ## Roadmap
