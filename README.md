@@ -1,6 +1,6 @@
 ![App Screenshot](https://i.ibb.co/PZFJvR5/logo.png)
 
-'Live in Night City' a.k.a. Survival Mode is a Cyberpunk 20077 Mod powered by Cyber Tweaks Engine.  
+'Live in Night City' a.k.a. Survival Mode is a Cyberpunk 20077 Mod powered by Cyber Engine Tweaks.  
 It's brings more gameplay/immersion with character needs.
 
 
