@@ -52,4 +52,4 @@ Settings
 
 
 #### Credits
-[psiberx](https://github.com/psiberx/cp2077-cet-kit) for his [CET kit](https://github.com/psiberx/cp2077-cet-kit), which I used to create this mod.
+[psiberx](https://github.com/psiberx) for his [CET kit](https://github.com/psiberx/cp2077-cet-kit), which I used to create this mod.
