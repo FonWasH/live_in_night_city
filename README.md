@@ -37,6 +37,7 @@ You must sleep at V's apartment to regenerate his fatigue. (You can also rest on
 - More complex metabolism
 - Link player's actions (like sprinting, sex scene)
 - Link player's attributes and player's cyber-mods
+- Housing ? (craft only in V's apartment)
 
 
 ## Screenshots
