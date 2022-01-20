@@ -6,7 +6,7 @@ It's brings more gameplay/immersion with character needs.
 
 ## Features
 
-- Manage character hunger, thirst and fatigue
+- Manage character's hunger, thirst and fatigue
 - Penalties according to character's needs level (however it can't kill you)
 - Dynamic status notification
 - Settings menu
