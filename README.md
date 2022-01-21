@@ -38,7 +38,7 @@ If one of the needs is low, penalties are applied according to its level.
 #### Hunger  
 - Penalty on total health  
 
-#### Tired  
+#### Fatigue  
 - Penalty on critical hit chance and stamina regeneration  
 - You can get flashes or a system malfunction (on hard and normal difficulty you can also be stunned or fall to the ground)  
 
