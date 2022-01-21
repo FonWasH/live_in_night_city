@@ -9,7 +9,7 @@ local EFFECTS = require("data/EffectsID")
 local CONFIG = require("config/Config")
 
 local MS = {
-    enable = true, --false
+    enable = false,
     cleanEffects = false,
     stepChange = false,
     isVehicle = false,
@@ -17,7 +17,7 @@ local MS = {
         total = {
             thirst = CONFIG.totalMax,
             hunger = CONFIG.totalMax,
-            fatigue = 0--CONFIG.totalMax
+            fatigue = CONFIG.totalMax,
         },
         stack = {
             thirst = 0,
