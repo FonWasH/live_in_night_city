@@ -1,6 +1,6 @@
 ![App Screenshot](https://i.ibb.co/PZFJvR5/logo.png)
 
-'Live in Night City' a.k.a. Survival Mode is a Cyberpunk 20077 Mod powered by Cyber Engine Tweaks.  
+'Live in Night City' a.k.a. Survival Mode is a Cyberpunk 2077 Mod powered by Cyber Engine Tweaks.  
 It's brings more gameplay/immersion with character needs.
 
 
@@ -38,7 +38,7 @@ If one of the needs is low, penalties are applied according to its level.
 #### Hunger  
 - Penalty on total health  
 
-#### Tired  
+#### Fatigue  
 - Penalty on critical hit chance and stamina regeneration  
 - You can get flashes or a system malfunction (on hard and normal difficulty you can also be stunned or fall to the ground)  
 
