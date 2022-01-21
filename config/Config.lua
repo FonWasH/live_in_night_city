@@ -6,8 +6,13 @@ local Config = {
     systemSleep = 1.0,
     warningDuration = 5.0,
     totalMax = 100,
-    sleepRegenMultiplier = 1.0,
-    alcoholMalus = 24.0,
+    action = {
+        sleep = 1.0,
+        drunk = 18,
+        moving = 8,
+        sprinting = 40,
+        melee = 24,
+    },
     stack = {
         thirst = 72,
         hunger = 108,

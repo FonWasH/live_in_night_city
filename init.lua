@@ -5,7 +5,7 @@ local CONFIG = require("config/Config")
 
 LiNC = {
     description = "'Live in Night City' a.k.a. survival mode",
-    version = "0.1",
+    version = "0.2",
     menu = require("modules/utils/UserMenu"),
     settings = {
         difficulty = 3,
@@ -23,7 +23,7 @@ function LiNC:new()
         Cron.Every(CONFIG.systemSleep, {tick = 1}, function(timer)
             MetaSystem.UpdateNeeds()
         end)
-        print("'Live in Night City' is ready (v" .. LiNC.version .. ")")
+        print("[Live in Night City] initialized (v" .. LiNC.version .. ")")
     end)
 
     registerForEvent("onUpdate", function(delta)

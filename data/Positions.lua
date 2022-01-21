@@ -10,6 +10,12 @@ local Positions = {
         y = 1266.7,
         xOffset = 2,
         yOffset = 1,
+    },
+    homeShower = {
+        x = -1383.2,
+        y = 1277.7,
+        xOffset = 1,
+        yOffset = 0.6
     }
 }
 

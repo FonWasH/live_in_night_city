@@ -7,10 +7,10 @@ It's brings more gameplay/immersion with character needs.
 ## Features
 
 - Manage character's hunger, thirst and fatigue
-- Penalties according to character's needs level (however it can't kill you)
+- Penalties according to character's needs level
 - Dynamic status notification
 - Settings menu
-- Multi-language support (currently EN, FR, DE is supported, more to come)
+- Multi-language support (currently EN, FR, DE, IT, RU is supported, more to come)
 
 
 ## Installation
@@ -25,20 +25,32 @@ It's brings more gameplay/immersion with character needs.
 
 ## Usage
 
-You can bind a hotkey in Cyber Engine Tweaks settings to display notifications as you wish.  
+You must keep V healthy by managing his needs.  
+
 You must drink and eat to regenerate V's thirst and hunger.  
-You must sleep at V's apartment to regenerate his fatigue. (You can also rest on the sofa)
+You must sleep in V's apartment to regenerate his fatigue. (You can also rest on the sofa or take a shower)  
+
+If one of the needs is low, penalties are applied according to its level.  
+
+#### Thirst  
+- Penalty on total stamina and total memory (and this can kill you on hard difficulty)  
+
+#### Hunger  
+- Penalty on total health  
+
+#### Tired  
+- Penalty on critical hit chance and stamina regeneration  
+- You can get flashes or a system malfunction (on hard and normal difficulty you can also be stunned or fall to the ground)  
 
 
 ## Roadmap
 
 - Finish the translation
 - Rework HUD
-- Dirtiness management
-- Option that allows to die from deficiencies
-- Link player's actions (like sprinting, sex scene)
-- Link player's attributes and player's cyber-mods
-- Housing ? (craft only in V's apartment)
+- Drug usage
+- More complex metabolism
+- Link mod with player's sex scene, attributes and cyber-mods
+- Housing ? (craft only in V's apartment...etc)
 
 
 ## Screenshots

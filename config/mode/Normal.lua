@@ -1,6 +1,6 @@
 local Normal= {
     thirst = {
-        visualStep = 3,
+        lowStep = 3,
         visualEffects = "BaseStatusEffect.NetwatcherGeneral",
         stats = {
             {
@@ -22,7 +22,7 @@ local Normal= {
         },
     },
     hunger = {
-        visualStep = 3,
+        lowStep = 3,
         visualEffects = "BaseStatusEffect.NetwatcherGeneral",
         stats = {
             {
@@ -39,8 +39,7 @@ local Normal= {
         },
     },
     fatigue = {
-        visualStep = 3,
-        visualEffects = "BaseStatusEffect.NetwatcherGeneral",
+        lowStep = 3,
         stats = {
             {
                 name = "CritChance",
@@ -52,6 +51,12 @@ local Normal= {
                 type = "Multiplier",
                 step = {1.0, 0.5, 0.25, 0.1},
             },
+        },
+        effects = {
+            randomProbability = 1,
+            probabilityStepMultiplier = {0, 0, 1, 2},
+            random = {"BaseStatusEffect.Stun", "BaseStatusEffect.SecondaryKnockdown", "BaseStatusEffect.Blind", "BaseStatusEffect.Overload"},
+            persistent = {"BaseStatusEffect.Encumbered"}
         },
         range = {
             {min = 99, max = 100},
