@@ -406,60 +406,60 @@ local Strings = {
         }
     },
     ["pl-pl"] = { -- Polish
-        thirst = "Thirst",
-        hunger = "Hunger",
-        fatigue = "Fatigue",
+        thirst = "Pragnienie",
+        hunger = "Głód",
+        fatigue = "Zmęczenie",
         step = {
             thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, ",
+                "Odpowiednie nawodnienie, ",
+                "Lekkie odwodnienie, ",
+                "Odwodnienie, ",
+                "Poważne odwodnienie, ",
             },
             hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Odpowiednie odżywienie, ",
+                "Lekkie niedożywienie, ",
+                "Niedożywienie, ",
+                "Poważne niedożywienie, ",
             },
             fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Odpowiednie wypoczęcie, ",
+                "Lekkie zmęczenie, ",
+                "Zmęczenie, ",
+                "Poważne zmęczenie, ",
             }
         },
         settings = {
             category = {
-                game = "Game Settings",
-                display = "Display Settings"
+                game = "Ustawienia gry",
+                display = "Ustawienia wyświetlania"
             },
             options = {
                 difficulty = {
-                    label = "Difficulty",
-                    description = "Defines the amount of debuffs applied when your needs are low."
+                    label = "Trudność",
+                    description = "Określa ilość stosowanych osłabień, gdy twoje potrzeby mają niski poziom."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    label = "Tempo metabolizmu",
+                    description = "Określa prędkość degradacji potrzeb (wartość > 1 = wolniejsza degradacja / wartość < 1 = szybsza degradacja)."
                 },
                 effect = {
-                    label = "Visual effects",
-                    description = "Enable/Disable display of visual effects when needs are low."
+                    label = "Efekty wizualne",
+                    description = "Włącza/Wyłącza wyświetlanie efektów wizualnych, gdy twoje potrzeby mają niski poziom."
                 },
                 notif = {
-                    label = "Notifications",
-                    description = "Enable/Disable the display of automatic needs level notifications."
+                    label = "Powiadomienia",
+                    description = "Włącza/Wyłącza wyświetlanie automatycznych powiadomień o poziomie potrzeb."
                 },
                 warning = {
-                    label = "Status warning",
-                    description = "Enable/Disable display of detailed status warning during notifications."
+                    label = "Ostrzeżenie o stanie",
+                    description = "Włącza/Wyłącza wyświetlanie szczegółowego ostrzeżenia o stanie podczas powiadomień."
                 },
             },
             difficulty = {
-                [1] = "Easy",
-                [2] = "Normal",
-                [3] = "Hard",
+                [1] = "Łatwy",
+                [2] = "Normalny",
+                [3] = "Trudny",
             }
         }
     },
