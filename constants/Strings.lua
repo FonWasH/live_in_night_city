@@ -8,19 +8,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -29,13 +29,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -48,12 +62,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     },
@@ -66,19 +80,19 @@ local Strings = {
                 "Vous êtes hydraté, ",
                 "Déshydratation Légère, ",
                 "Déshydratation, ",
-                "Déshydratation Grave, ",
+                "Déshydratation Grave, "
             },
             hunger = {
                 "Vous êtes nourris, ",
                 "Sous-alimentation Légère, ",
                 "Sous-alimentation, ",
-                "Sous-alimentation Grave, ",
+                "Sous-alimentation Grave, "
             },
             fatigue = {
                 "Vous êtes reposé, ",
                 "Épuisement Léger, ",
                 "Épuisement, ",
-                "Épuisement Grave, ",
+                "Épuisement Grave, "
             }
         },
         settings = {
@@ -87,13 +101,27 @@ local Strings = {
                 display = "Paramètres d'Affichage"
             },
             options = {
+                gamepad = {
+                    label = "Manette",
+                    description = "Activer/Désactiver la prise en charge de la manette (D-pad gauche)"
+                },
                 difficulty = {
                     label = "Difficulté",
                     description = "Définit la quantité de malus appliqués quand vos besoins sont bas."
                 },
                 decay = {
-                    label = "Taux de dégradation du métabolisme",
-                    description = "Définit la vitesse de dégradation des besoins (valeur > 1 = dégradation plus lente / valeur < 1 = dégradation plus rapide)."
+                    thirst = {
+                        label = "Taux de dégradation de la soif",
+                        description = "Définit la vitesse de dégradation de la soif (valeur > 1 = dégradation plus lente / valeur < 1 = dégradation plus rapide)."
+                    },
+                    hunger = {
+                        label = "Taux de dégradation de la faim",
+                        description = "Définit la vitesse de dégradation de la faim (valeur > 1 = dégradation plus lente / valeur < 1 = dégradation plus rapide)."
+                    },
+                    fatigue = {
+                        label = "Taux de dégradation de la fatigue",
+                        description = "Définit la vitesse de dégradation de la fatigue (valeur > 1 = dégradation plus lente / valeur < 1 = dégradation plus rapide)."
+                    }
                 },
                 effect = {
                     label = "Effets visuels",
@@ -111,7 +139,7 @@ local Strings = {
             difficulty = {
                 [1] = "Facile",
                 [2] = "Normal",
-                [3] = "Difficile",
+                [3] = "Difficile"
             }
         }
     },
@@ -124,19 +152,19 @@ local Strings = {
                 "Sie sind hydratisiert, ",
                 "Niedrige Austrocknung, ",
                 "Austrocknung, ",
-                "Schwere Austrocknung, ",
+                "Schwere Austrocknung, "
             },
             hunger = {
                 "Du bist satt, ",
                 "Niedrige Unterernährung, ",
                 "Unterernährung, ",
-                "Schwere Unterernährung, ",
+                "Schwere Unterernährung, "
             },
             fatigue = {
                 "Sie sind ausgeruht, ",
                 "Niedrige Erschöpfung, ",
                 "Erschöpfung, ",
-                "Schwere Erschöpfung, ",
+                "Schwere Erschöpfung, "
             }
         },
         settings = {
@@ -145,13 +173,27 @@ local Strings = {
                 display = "Bildschirmeinstellungen"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Gamepad-Unterstützung aktivieren/deaktivieren (linkes D-Pad)"
+                },
                 difficulty = {
                     label = "Schwierigkeit",
                     description = "Definiert die Menge an Debuffs, die angewendet werden, wenn Ihre Bedürfnisse gering sind."
                 },
                 decay = {
-                    label = "Abbaurate des Stoffwechsels",
-                    description = "Definiert die erforderliche Abbaugeschwindigkeit (Wert > 1 = langsamerer Abbau / Wert < 1 = schnellerer Abbau)."
+                    thirst = {
+                        label = "Durstabbaurate",
+                        description = "Definiert die Durstabbaurate (Wert > 1 = langsamerer Abbau / Wert < 1 = schnellerer Abbau)."
+                    },
+                    hunger = {
+                        label = "Hungerverschlechterungsrate",
+                        description = "Definiert die Hungerabbaugeschwindigkeit (Wert > 1 = langsamerer Abbau / Wert < 1 = schnellerer Abbau)."
+                    },
+                    fatigue = {
+                        label = "Ermüdungsabbaurate",
+                        description = "Definiert die Ermüdungsabbaurate (Wert > 1 = langsamerer Abbau / Wert < 1 = schnellerer Abbau)."
+                    }
                 },
                 effect = {
                     label = "Visuelle Effekte",
@@ -164,12 +206,12 @@ local Strings = {
                 warning = {
                     label = "Statuswarnung",
                     description = "Aktivieren/Deaktivieren der Anzeige detaillierter Statuswarnungen während Benachrichtigungen."
-                },
+                }
             },
             difficulty = {
                 [1] = "Leicht",
                 [2] = "Normal",
-                [3] = "Schwer",
+                [3] = "Schwer"
             }
         }
     },
@@ -182,19 +224,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -203,13 +245,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -222,12 +278,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     },
@@ -240,19 +296,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -261,13 +317,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -280,12 +350,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     },
@@ -298,19 +368,19 @@ local Strings = {
                 "Sei idratato, ",
                 "Bassa disidratazione, ",
                 "Disidratazione, ",
-                "Grave disidratazione, ",
+                "Grave disidratazione, "
             },
             hunger = {
                 "Sei sazio, ",
                 "Lievemente denutrito, ",
                 "Denutrito, ",
-                "Grave denutrizione, ",
+                "Grave denutrizione, "
             },
             fatigue = {
                 "Sei riposato, ",
                 "Lieve sfinimento, ",
                 "Sfinimento, ",
-                "Grave sfinimento, ",
+                "Grave sfinimento, "
             }
         },
         settings = {
@@ -319,13 +389,27 @@ local Strings = {
                 display = "Impostazioni schermo"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Abilita/Disabilita il supporto del gamepad (D-pad sinistro)"
+                },
                 difficulty = {
                     label = "Difficoltà",
                     description = "Definisce il numero di debuffs quando i tuoi bisogni sono al minimo."
                 },
                 decay = {
-                    label = "Tasso di decadimento del metabolismo",
-                    description = "Definisce la velocità di degradazione (valore > 1 = degradazione lento / valore < 1 = degradazione veloce)."
+                    thirst = {
+                        label = "Tasso di decadimento della sete",
+                        description = "Definisce la velocità di degradazione (valore > 1 = degradazione lento / valore < 1 = degradazione veloce)."
+                    },
+                    hunger = {
+                        label = "Tasso di decadimento della fame",
+                        description = "Definisce la velocità di degradazione (valore > 1 = degradazione lento / valore < 1 = degradazione veloce)."
+                    },
+                    fatigue = {
+                        label = "Tasso di decadimento della stanchezza",
+                        description = "Definisce la velocità di degradazione (valore > 1 = degradazione lento / valore < 1 = degradazione veloce)."
+                    }
                 },
                 effect = {
                     label = "Effetti visivi",
@@ -338,12 +422,12 @@ local Strings = {
                 warning = {
                     label = "Avvisi di stato",
                     description = "Abilita/Disabilita gli avvisi dettagliati di stato durante le notifiche."
-                },
+                }
             },
             difficulty = {
                 [1] = "Facile",
                 [2] = "Normale",
-                [3] = "Difficile",
+                [3] = "Difficile"
             }
         }
     },
@@ -356,19 +440,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -377,13 +461,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -396,12 +494,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     },
@@ -411,6 +509,7 @@ local Strings = {
         fatigue = "Zmęczenie",
         step = {
             thirst = {
+<<<<<<< HEAD:data/Strings.lua
                 "Odpowiednie nawodnienie, ",
                 "Lekkie odwodnienie, ",
                 "Odwodnienie, ",
@@ -427,6 +526,24 @@ local Strings = {
                 "Lekkie zmęczenie, ",
                 "Zmęczenie, ",
                 "Poważne zmęczenie, ",
+=======
+                "You are hydrated, ",
+                "Low Dehydration, ",
+                "Dehydration, ",
+                "Severe Dehydration, "
+            },
+            hunger = {
+                "You are fed, ",
+                "Low Undernourishment, ",
+                "Undernourishment, ",
+                "Severe Undernourishment, "
+            },
+            fatigue = {
+                "You are rested, ",
+                "Low Exhaustion, ",
+                "Exhaustion, ",
+                "Severe Exhaustion, "
+>>>>>>> main:constants/Strings.lua
             }
         },
         settings = {
@@ -435,13 +552,32 @@ local Strings = {
                 display = "Ustawienia wyświetlania"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Trudność",
                     description = "Określa ilość stosowanych osłabień, gdy twoje potrzeby mają niski poziom."
                 },
                 decay = {
+<<<<<<< HEAD:data/Strings.lua
                     label = "Tempo metabolizmu",
                     description = "Określa prędkość degradacji potrzeb (wartość > 1 = wolniejsza degradacja / wartość < 1 = szybsza degradacja)."
+=======
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
+>>>>>>> main:constants/Strings.lua
                 },
                 effect = {
                     label = "Efekty wizualne",
@@ -452,6 +588,7 @@ local Strings = {
                     description = "Włącza/Wyłącza wyświetlanie automatycznych powiadomień o poziomie potrzeb."
                 },
                 warning = {
+<<<<<<< HEAD:data/Strings.lua
                     label = "Ostrzeżenie o stanie",
                     description = "Włącza/Wyłącza wyświetlanie szczegółowego ostrzeżenia o stanie podczas powiadomień."
                 },
@@ -460,6 +597,16 @@ local Strings = {
                 [1] = "Łatwy",
                 [2] = "Normalny",
                 [3] = "Trudny",
+=======
+                    label = "Status warning",
+                    description = "Enable/Disable display of detailed status warning during notifications."
+                }
+            },
+            difficulty = {
+                [1] = "Easy",
+                [2] = "Normal",
+                [3] = "Hard"
+>>>>>>> main:constants/Strings.lua
             }
         }
     },
@@ -472,52 +619,66 @@ local Strings = {
                 "Нет нужды в питье, ",
                 "Лёгкое обезвоживание, ",
                 "Обезвоживание, ",
-                "Серьезное обезвоживание, ",
+                "Серьезное обезвоживание, "
             },
             hunger = {
                 "Нет нужды в еде, ",
                 "Лёгкое голодание, ",
                 "Голодание, ",
-                "Серьезное голодание, ",
+                "Серьезное голодание, "
             },
             fatigue = {
                 "Вы в состоянии бодрости, ",
                 "Лёгкая усталость, ",
                 "Усталость, ",
-                "Значительная усталость, ",
+                "Значительная усталость, "
             }
         },
         settings = {
             category = {
                 game = "Настройки Модификации",
-                display = "Настройки Отображения",
+                display = "Настройки Отображения"
             },
             options = {
+                gamepad = {
+                    label = "Геймпад",
+                    description = "Включить/отключить поддержку геймпада (левый крестовина)"
+                },
                 difficulty = {
                     label = "Сложность",
-                    description = "Определяет количество отрицательных эффектов, применяемых при плохом удовлетворении физиологических потребностей.",
+                    description = "Определяет количество отрицательных эффектов, применяемых при плохом удовлетворении физиологических потребностей."
                 },
                 decay = {
-                    label = "Скорость метаболизма",
-                    description = "Определяет общую скорость упадка сил (значение > 1 = малое снижение / значение < 1 = большое снижение).",
+                    thirst = {
+                        label = "Скорость жажда",
+                        description = "Определяет общую скорость упадка сил (значение > 1 = малое снижение / значение < 1 = большое снижение)."
+                    },
+                    hunger = {
+                        label = "Скорость голод",
+                        description = "Определяет общую скорость упадка сил (значение > 1 = малое снижение / значение < 1 = большое снижение)."
+                    },
+                    fatigue = {
+                        label = "Скорость усталый",
+                        description = "Определяет общую скорость упадка сил (значение > 1 = малое снижение / значение < 1 = большое снижение)."
+                    }
                 },
                 effect = {
                     label = "Визуальные эффекты",
-                    description = "Включение/выключение отображения визуальных эффектов при низком уровне физиологических потребностей.",
+                    description = "Включение/выключение отображения визуальных эффектов при низком уровне физиологических потребностей."
                 },
                 notif = {
                     label = "Оповещения",
-                    description = "Включение/выключение отображения автоматических оповещений об уровне физиологических потребностей.",
+                    description = "Включение/выключение отображения автоматических оповещений об уровне физиологических потребностей."
                 },
                 warning = {
                     label = "Предупреждение о состоянии",
-                    description = "Включение/выключение отображения подробного предупреждения о состояниях во время оповещений.",
-                },
+                    description = "Включение/выключение отображения подробного предупреждения о состояниях во время оповещений."
+                }
             },
             difficulty = {
                 [1] = "Лёгкая",
                 [2] = "Средняя",
-                [3] = "Сложная",
+                [3] = "Сложная"
             }
         }
     },
@@ -530,19 +691,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -551,13 +712,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -570,12 +745,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     },
@@ -588,19 +763,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -609,13 +784,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -628,12 +817,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     },
@@ -646,19 +835,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -667,13 +856,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -686,12 +889,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     },
@@ -704,19 +907,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -725,13 +928,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -744,12 +961,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     },
@@ -762,19 +979,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -783,13 +1000,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -802,12 +1033,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     },
@@ -820,19 +1051,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -841,13 +1072,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -860,12 +1105,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     },
@@ -878,19 +1123,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -899,13 +1144,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -918,12 +1177,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     },
@@ -936,19 +1195,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -957,13 +1216,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -976,12 +1249,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     },
@@ -994,19 +1267,19 @@ local Strings = {
                 "You are hydrated, ",
                 "Low Dehydration, ",
                 "Dehydration, ",
-                "Severe Dehydration, ",
+                "Severe Dehydration, "
             },
             hunger = {
                 "You are fed, ",
                 "Low Undernourishment, ",
                 "Undernourishment, ",
-                "Severe Undernourishment, ",
+                "Severe Undernourishment, "
             },
             fatigue = {
                 "You are rested, ",
                 "Low Exhaustion, ",
                 "Exhaustion, ",
-                "Severe Exhaustion, ",
+                "Severe Exhaustion, "
             }
         },
         settings = {
@@ -1015,13 +1288,27 @@ local Strings = {
                 display = "Display Settings"
             },
             options = {
+                gamepad = {
+                    label = "Gamepad",
+                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                },
                 difficulty = {
                     label = "Difficulty",
                     description = "Defines the amount of debuffs applied when your needs are low."
                 },
                 decay = {
-                    label = "Metabolism decay rate",
-                    description = "Defines the needs degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    thirst = {
+                        label = "Thirst decay rate",
+                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    hunger = {
+                        label = "Hunger decay rate",
+                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    },
+                    fatigue = {
+                        label = "Fatigue decay rate",
+                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                    }
                 },
                 effect = {
                     label = "Visual effects",
@@ -1034,12 +1321,12 @@ local Strings = {
                 warning = {
                     label = "Status warning",
                     description = "Enable/Disable display of detailed status warning during notifications."
-                },
+                }
             },
             difficulty = {
                 [1] = "Easy",
                 [2] = "Normal",
-                [3] = "Hard",
+                [3] = "Hard"
             }
         }
     }
