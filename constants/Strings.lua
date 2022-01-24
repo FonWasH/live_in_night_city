@@ -509,41 +509,22 @@ local Strings = {
         fatigue = "Zmęczenie",
         step = {
             thirst = {
-<<<<<<< HEAD:data/Strings.lua
                 "Odpowiednie nawodnienie, ",
                 "Lekkie odwodnienie, ",
                 "Odwodnienie, ",
-                "Poważne odwodnienie, ",
+                "Poważne odwodnienie, "
             },
             hunger = {
                 "Odpowiednie odżywienie, ",
                 "Lekkie niedożywienie, ",
                 "Niedożywienie, ",
-                "Poważne niedożywienie, ",
+                "Poważne niedożywienie, "
             },
             fatigue = {
                 "Odpowiednie wypoczęcie, ",
                 "Lekkie zmęczenie, ",
                 "Zmęczenie, ",
-                "Poważne zmęczenie, ",
-=======
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
->>>>>>> main:constants/Strings.lua
+                "Poważne zmęczenie, "
             }
         },
         settings = {
@@ -554,30 +535,25 @@ local Strings = {
             options = {
                 gamepad = {
                     label = "Gamepad",
-                    description = "Enable/Disable Gamepad Support (Left D-pad)"
+                    description = "Włącza/Wyłącza wsparcie Gamepada (Lewy D-pad)"
                 },
                 difficulty = {
                     label = "Trudność",
                     description = "Określa ilość stosowanych osłabień, gdy twoje potrzeby mają niski poziom."
                 },
                 decay = {
-<<<<<<< HEAD:data/Strings.lua
-                    label = "Tempo metabolizmu",
-                    description = "Określa prędkość degradacji potrzeb (wartość > 1 = wolniejsza degradacja / wartość < 1 = szybsza degradacja)."
-=======
                     thirst = {
-                        label = "Thirst decay rate",
-                        description = "Defines the thirst degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                        label = "Wskaźnik pragnienia",
+                        description = "Określa prędkość degradacji napojenia (wartość > 1 = wolniejsza degradacja / wartość < 1 = szybsza degradacja)."
                     },
                     hunger = {
-                        label = "Hunger decay rate",
-                        description = "Defines the hunger degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                        label = "Wskaźnik głodu",
+                        description = "Określa prędkość degradacji najedzenia (wartość > 1 = wolniejsza degradacja / wartość < 1 = szybsza degradacja)."
                     },
                     fatigue = {
-                        label = "Fatigue decay rate",
-                        description = "Defines the fatigue degradation speed (value > 1 = slower degradation / value < 1 = faster degradation)."
+                        label = "Wskaźnik zmęczenia",
+                        description = "Określa prędkość degradacji wypoczęcia (wartość > 1 = wolniejsza degradacja / wartość < 1 = szybsza degradacja)."
                     }
->>>>>>> main:constants/Strings.lua
                 },
                 effect = {
                     label = "Efekty wizualne",
@@ -588,25 +564,14 @@ local Strings = {
                     description = "Włącza/Wyłącza wyświetlanie automatycznych powiadomień o poziomie potrzeb."
                 },
                 warning = {
-<<<<<<< HEAD:data/Strings.lua
                     label = "Ostrzeżenie o stanie",
                     description = "Włącza/Wyłącza wyświetlanie szczegółowego ostrzeżenia o stanie podczas powiadomień."
-                },
+                }
             },
             difficulty = {
                 [1] = "Łatwy",
                 [2] = "Normalny",
-                [3] = "Trudny",
-=======
-                    label = "Status warning",
-                    description = "Enable/Disable display of detailed status warning during notifications."
-                }
-            },
-            difficulty = {
-                [1] = "Easy",
-                [2] = "Normal",
-                [3] = "Hard"
->>>>>>> main:constants/Strings.lua
+                [3] = "Trudny"
             }
         }
     },
