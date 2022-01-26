@@ -3,18 +3,34 @@ User = {}
 function User:new()
     local o = {}
 
-    setmetatable(o, {__index = self})
+    setmetatable(o, {
+        __index = self
+    })
 
     o.settings = {
-        difficulty = 3,
-        gamepad = true,
-        decayRate = {
-            thirst = 1.0,
-            hunger = 1.0,
-            fatigue = 1.0
+        game = {
+            difficulty = 3,
+            gamepad = true
         },
-        warningMsg = true,
-        notif = true
+        thirst = {
+            dayPool = 3,
+            regenMultiplier = 1.0,
+            costMultiplier = 1.0
+        },
+        hunger = {
+            dayPool = 30,
+            regenMultiplier = 1.0,
+            costMultiplier = 1.0
+        },
+        fatigue = {
+            dayPool = 14,
+            regenMultiplier = 1.0,
+            costMultiplier = 1.0
+        },
+        display = {
+            warning = true,
+            notif = true
+        }
     }
     o.language = ""
 
@@ -22,86 +38,54 @@ function User:new()
 end
 
 function User:menu()
-    local nativeSettings = GetMod("nativeSettings")
-    if not nativeSettings.pathExists("/LiNC") then
-        nativeSettings.addTab("/LiNC", "Live in Night City")
+    local DEFAULT = require("constants/DefaultUser")
+    local STRINGS = LiNC.strings.settings
+    local menu = GetMod("nativeSettings")
+
+    local name = "Live in Night City"
+    local root = "/LiNC"
+    local sep = "/"
+
+    if not menu.pathExists(root) then
+        menu.addTab(root, name)
     end
 
-    if nativeSettings.pathExists("/LiNC/game") then
-        nativeSettings.removeSubcategory("/LiNC/game")
+    for category, settings in pairs(DEFAULT) do
+        local path = root .. sep .. category
+        
+        if menu.pathExists(path) then
+            menu.removeSubcategory(path)
+        end
+        menu.addSubcategory(path, STRINGS.category[category])
+
+        for setting, v in pairs(settings) do
+            local strings = STRINGS.options[category][setting]
+
+            if v.type == "Selector" then
+                menu.addSelectorString(path, strings.label, strings.description, strings.mode,
+                    self.settings[category][setting], v.default, function(value)
+                        self.settings[category][setting] = value
+                    end)
+            elseif v.type == "Switch" then
+                menu.addSwitch(path, strings.label, strings.description, self.settings[category][setting], v.default,
+                    function(state)
+                        self.settings[category][setting] = state
+                    end)
+            elseif v.type == "RangeInt" then
+                menu.addRangeInt(path, strings.label, strings.description, 1, 90, 1, self.settings[category][setting],
+                    v.default, function(value)
+                        self.settings[category][setting] = value
+                    end)
+            elseif v.type == "RangeFloat" then
+                menu.addRangeFloat(path, strings.label, strings.description, 0.25, 100.0, 0.25, "%.2f",
+                    self.settings[category][setting], v.default, function(value)
+                        self.settings[category][setting] = value
+                    end)
+            end
+        end
     end
-    nativeSettings.addSubcategory("/LiNC/game", LiNC.strings.settings.category.game)
 
-    if nativeSettings.pathExists("/LiNC/display") then
-        nativeSettings.removeSubcategory("/LiNC/display")
-    end
-    nativeSettings.addSubcategory("/LiNC/display", LiNC.strings.settings.category.display)
-
-    nativeSettings.addSwitch("/LiNC/game",
-        LiNC.strings.settings.options.gamepad.label,
-        LiNC.strings.settings.options.gamepad.description,
-        self.settings.gamepad, true,
-        function(state)
-            self.settings.gamepad = state
-        end
-    )
-
-    nativeSettings.addSelectorString("/LiNC/game",
-        LiNC.strings.settings.options.difficulty.label,
-        LiNC.strings.settings.options.difficulty.description,
-        LiNC.strings.settings.difficulty,
-        self.settings.difficulty, 3,
-        function(value)
-            self.settings.difficulty = value
-        end
-    )
-
-    nativeSettings.addRangeFloat("/LiNC/game",
-        LiNC.strings.settings.options.decay.thirst.label,
-        LiNC.strings.settings.options.decay.thirst.description,
-        0.25, 4.0, 0.25, "%.2f", self.settings.decayRate.thirst, 1.0,
-        function(value)
-            self.settings.decayRate.thirst = value
-        end
-    )
-
-    nativeSettings.addRangeFloat("/LiNC/game",
-        LiNC.strings.settings.options.decay.hunger.label,
-        LiNC.strings.settings.options.decay.hunger.description,
-        0.25, 4.0, 0.25, "%.2f", self.settings.decayRate.hunger, 1.0,
-        function(value)
-            self.settings.decayRate.hunger = value
-        end
-    )
-
-    nativeSettings.addRangeFloat("/LiNC/game",
-        LiNC.strings.settings.options.decay.fatigue.label,
-        LiNC.strings.settings.options.decay.fatigue.description,
-        0.25, 4.0, 0.25, "%.2f", self.settings.decayRate.fatigue, 1.0,
-        function(value)
-            self.settings.decayRate.fatigue = value
-        end
-    )
-
-    nativeSettings.addSwitch("/LiNC/display",
-        LiNC.strings.settings.options.notif.label,
-        LiNC.strings.settings.options.notif.description,
-        self.settings.notif, true,
-        function(state)
-            self.settings.notif = state
-        end
-    )
-
-    nativeSettings.addSwitch("/LiNC/display",
-        LiNC.strings.settings.options.warning.label,
-        LiNC.strings.settings.options.warning.description,
-        self.settings.warningMsg, true,
-        function(state)
-            self.settings.warningMsg = state
-        end
-    )
-
-    nativeSettings.refresh()
+    menu.refresh()
 end
 
 function User:load()

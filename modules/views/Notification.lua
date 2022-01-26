@@ -20,7 +20,7 @@ function Notification.show()
         notif = string.sub(notif, 1, string.len(notif) - 5)
 
         GameHUD.ShowMessage(notif)
-        if User.settings.warningMsg and warning then
+        if User.settings.display.warning and warning then
             status = string.sub(status, 1, string.len(status) - 2)
             GameHUD.ShowWarning(status, Notification.duration)
         end

@@ -6,7 +6,7 @@ function Need:new()
     setmetatable(o, {__index = self})
 
     o.config = {}
-    o.decayRate = 1.0
+    o.userSettings = {}
     o.state = {
         total = 0,
         pool = 0,
@@ -100,9 +100,9 @@ function Need:updateStep()
 end
 
 function Need:updatePool()
-    local poolMax = self.config.poolMax * self.decayRate
-    local regen = getActionValue(self.config.actionRegen, Player.actionRegen) * self.decayRate
-    local cost = 1 + getActionValue(self.config.actionCost, Player.actionCost)
+    local poolMax = self.config.poolMax * self.userSettings.dayPool
+    local regen = ((getActionValue(self.config.actionRegen, Player.actionRegen) * self.userSettings.dayPool) * self.userSettings.regenMultiplier)
+    local cost = 1 + ((getActionValue(self.config.actionCost, Player.actionCost) * self.userSettings.dayPool) * self.userSettings.costMultiplier)
 
     self.state.pool = self.state.pool + regen + cost
 
@@ -121,15 +121,16 @@ function Need:reset()
     end
 end
 
-function Need:update(config, decayRate)
+function Need:update(config, userSettings)
     self.config = config
-    self.decayRate = decayRate
+    self.userSettings = userSettings
 
     if Player.state.enable then
         self:updatePool()
         self:updateStep()
 
-        if self.state.prevStep ~= self.state.step then
+        if self.state.prevStep ~= self.state.step or Player.state.refresh then
+            Player.state.refresh = false
             if self.state.step > 0 then
                 Player.state.showNotif = true
             end

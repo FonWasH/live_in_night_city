@@ -7,7 +7,7 @@ local gameSettings = require("modules/utils/GameSettings")
 local Listeners = {}
 
 function Listeners.init()
-    LiNC.config = CONFIG[User.settings.difficulty]
+    LiNC.config = CONFIG[User.settings.game.difficulty]
 
     User.language = NameToString(gameSettings.Get("/language/OnScreen"))
     LiNC.strings = STRINGS[User.language]
@@ -24,8 +24,10 @@ function Listeners.init()
 
             User:menu()
 
-            LiNC.config = CONFIG[User.settings.difficulty]
+            LiNC.config = CONFIG[User.settings.game.difficulty]
             User:save()
+
+            Player.state.refresh = true
         end
     end)
 end

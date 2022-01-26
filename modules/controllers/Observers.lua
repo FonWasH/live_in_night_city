@@ -35,6 +35,7 @@ local function saveObserver()
         else
             Player:reset()
         end
+        Player.state.refresh = true
         saves = {}
     end)
 end
@@ -74,9 +75,13 @@ local function playerActionObserver()
             if actionName == "QuickMelee" then
                 Player.actionCost.melee = true
             end
+
+            if actionName == "Jump" then
+                Player.actionCost.jump = true
+            end
         end
 
-        if Player.state.enable and User.settings.gamepad then
+        if Player.state.enable and User.settings.game.gamepad then
             if actionName == "dpad_left" and actionType == "BUTTON_PRESSED" then
                 Notif.show()
             end

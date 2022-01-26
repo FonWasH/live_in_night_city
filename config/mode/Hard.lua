@@ -1,19 +1,20 @@
 local Hard = {
     thirst = {
         totalMax = 100,
-        poolMax = 324,
+        poolMax = 108,
         sleepTotalCost = 10,
         actionCost = {
-            alcohol = 162,
-            move = 0,
-            sprint = 3,
-            melee = 16
+            alcohol = 54,
+            move = 0.1,
+            sprint = 1,
+            melee = 3,
+            jump = 2
             --drug = 0, --wip
         },
         actionRegen = {
-            drink = -600,
-            eat = -60,
-            shower = -600,
+            drink = -200,
+            eat = -15,
+            shower = -200,
             rest = 0
             --sex = 0, --wip
         },
@@ -47,18 +48,19 @@ local Hard = {
     },
     hunger = {
         totalMax = 100,
-        poolMax = 3024,
+        poolMax = 108,
         sleepTotalCost = 10,
         actionCost = {
-            alcohol = 15,
-            move = 5,
-            sprint = 50,
-            melee = 90
+            alcohol = 1,
+            move = 0.1,
+            sprint = 1,
+            melee = 3,
+            jump = 2
             --drug = 0, --wip
         },
         actionRegen = {
             drink = 0,
-            eat = -800,
+            eat = -30,
             shower = 0,
             rest = 0
             --sex = 0, --wip
@@ -88,19 +90,20 @@ local Hard = {
     },
     fatigue = {
         totalMax = 100,
-        poolMax = 756,
+        poolMax = 108,
         actionCost = {
-            alcohol = -300,
-            move = 1,
-            sprint = 2,
-            melee = 25
+            alcohol = -36,
+            move = 0.1,
+            sprint = 1,
+            melee = 3,
+            jump = 2
             --drug = 0, --wip
         },
         actionRegen = {
             drink = 0,
-            eat = 0.25,
-            shower = -400,
-            rest = -800
+            eat = 0.05,
+            shower = -54,
+            rest = -200
             --sex = 0, --wip
         },
         step = {

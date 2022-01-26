@@ -16,12 +16,14 @@ function Player:new()
         enable = false,
         vehicle = false,
         showNotif = false,
+        refresh = false
     }
     o.actionCost = {
         alcohol = false,
         move = false,
         sprint = false,
-        melee = false
+        melee = false,
+        jump = false
         --drug = false --wip
     }
     o.actionRegen = {
@@ -92,9 +94,9 @@ function Player:getConsumption()
 end
 
 function Player:updateMetabolism()
-    self.needs.thirst:update(LiNC.config.thirst, User.settings.decayRate.thirst)
-    self.needs.hunger:update(LiNC.config.hunger, User.settings.decayRate.hunger)
-    self.needs.fatigue:update(LiNC.config.fatigue, User.settings.decayRate.fatigue)
+    self.needs.thirst:update(LiNC.config.thirst, User.settings.thirst)
+    self.needs.hunger:update(LiNC.config.hunger, User.settings.hunger)
+    self.needs.fatigue:update(LiNC.config.fatigue, User.settings.fatigue)
     if self.actionRegen.sleep then
         self.actionRegen.sleep = false
         self.needs.fatigue:setTotal(0)
@@ -102,9 +104,10 @@ function Player:updateMetabolism()
         self.needs.thirst:setTotal(self.needs.thirst.state.total + LiNC.config.thirst.sleepTotalCost)
     end
     self.actionRegen.melee = false
+    self.actionCost.jump = false
     if self.state.showNotif then
         self.state.showNotif = false
-        if User.settings.notif then
+        if User.settings.display.notif then
             Notif.show()
         end
     end
