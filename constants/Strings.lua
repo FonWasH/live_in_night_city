@@ -4,24 +4,9 @@ local Strings = {
         hunger = "Hunger",
         fatigue = "Fatigue",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
+            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
+            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
         },
         settings = {
             category = {
@@ -107,24 +92,9 @@ local Strings = {
         hunger = "Faim",
         fatigue = "Fatigue",
         step = {
-            thirst = {
-                "Vous êtes hydraté, ",
-                "Déshydratation Légère, ",
-                "Déshydratation, ",
-                "Déshydratation Grave, "
-            },
-            hunger = {
-                "Vous êtes nourris, ",
-                "Sous-alimentation Légère, ",
-                "Sous-alimentation, ",
-                "Sous-alimentation Grave, "
-            },
-            fatigue = {
-                "Vous êtes reposé, ",
-                "Épuisement Léger, ",
-                "Épuisement, ",
-                "Épuisement Grave, "
-            }
+            thirst = {"Vous êtes hydraté, ", "Déshydratation Légère, ", "Déshydratation, ", "Déshydratation Grave, "},
+            hunger = {"Vous êtes nourris, ", "Sous-alimentation Légère, ", "Sous-alimentation, ", "Sous-alimentation Grave, "},
+            fatigue = {"Vous êtes reposé, ", "Épuisement Léger, ", "Épuisement, ", "Épuisement Grave, "}
         },
         settings = {
             category = {
@@ -210,24 +180,9 @@ local Strings = {
         hunger = "Hunger",
         fatigue = "Ermüdung",
         step = {
-            thirst = {
-                "Sie sind hydratisiert, ",
-                "Niedrige Austrocknung, ",
-                "Austrocknung, ",
-                "Schwere Austrocknung, "
-            },
-            hunger = {
-                "Du bist satt, ",
-                "Niedrige Unterernährung, ",
-                "Unterernährung, ",
-                "Schwere Unterernährung, "
-            },
-            fatigue = {
-                "Sie sind ausgeruht, ",
-                "Niedrige Erschöpfung, ",
-                "Erschöpfung, ",
-                "Schwere Erschöpfung, "
-            }
+            thirst = {"Sie sind hydratisiert, ", "Niedrige Austrocknung, ", "Austrocknung, ", "Schwere Austrocknung, "},
+            hunger = {"Du bist satt, ", "Niedrige Unterernährung, ", "Unterernährung, ", "Schwere Unterernährung, "},
+            fatigue = {"Sie sind ausgeruht, ", "Niedrige Erschöpfung, ", "Erschöpfung, ", "Schwere Erschöpfung, "}
         },
         settings = {
             category = {
@@ -313,24 +268,9 @@ local Strings = {
         hunger = "Hambre",
         fatigue = "Fatiga",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
+            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
+            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
         },
         settings = {
             category = {
@@ -416,24 +356,9 @@ local Strings = {
         hunger = "Hunger",
         fatigue = "Fatigue",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
+            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
+            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
         },
         settings = {
             category = {
@@ -519,24 +444,9 @@ local Strings = {
         hunger = "Fame",
         fatigue = "Stanchezza",
         step = {
-            thirst = {
-                "Sei idratato, ",
-                "Bassa disidratazione, ",
-                "Disidratazione, ",
-                "Grave disidratazione, "
-            },
-            hunger = {
-                "Sei sazio, ",
-                "Lievemente denutrito, ",
-                "Denutrito, ",
-                "Grave denutrizione, "
-            },
-            fatigue = {
-                "Sei riposato, ",
-                "Lieve sfinimento, ",
-                "Sfinimento, ",
-                "Grave sfinimento, "
-            }
+            thirst = {"Sei idratato, ", "Bassa disidratazione, ", "Disidratazione, ", "Grave disidratazione, "},
+            hunger = {"Sei sazio, ", "Lievemente denutrito, ", "Denutrito, ", "Grave denutrizione, "},
+            fatigue = {"Sei riposato, ", "Lieve sfinimento, ", "Sfinimento, ", "Grave sfinimento, "}
         },
         settings = {
             category = {
@@ -622,24 +532,9 @@ local Strings = {
         hunger = "Hunger",
         fatigue = "Fatigue",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
+            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
+            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
         },
         settings = {
             category = {
@@ -725,24 +620,9 @@ local Strings = {
         hunger = "Głód",
         fatigue = "Zmęczenie",
         step = {
-            thirst = {
-                "Odpowiednie nawodnienie, ",
-                "Lekkie odwodnienie, ",
-                "Odwodnienie, ",
-                "Poważne odwodnienie, "
-            },
-            hunger = {
-                "Odpowiednie odżywienie, ",
-                "Lekkie niedożywienie, ",
-                "Niedożywienie, ",
-                "Poważne niedożywienie, "
-            },
-            fatigue = {
-                "Odpowiednie wypoczęcie, ",
-                "Lekkie zmęczenie, ",
-                "Zmęczenie, ",
-                "Poważne zmęczenie, "
-            }
+            thirst = {"Odpowiednie nawodnienie, ", "Lekkie odwodnienie, ", "Odwodnienie, ", "Poważne odwodnienie, "},
+            hunger = {"Odpowiednie odżywienie, ", "Lekkie niedożywienie, ", "Niedożywienie, ", "Poważne niedożywienie, "},
+            fatigue = {"Odpowiednie wypoczęcie, ", "Lekkie zmęczenie, ", "Zmęczenie, ", "Poważne zmęczenie, "}
         },
         settings = {
             category = {
@@ -828,24 +708,9 @@ local Strings = {
         hunger = "Голод",
         fatigue = "Усталость",
         step = {
-            thirst = {
-                "Нет нужды в питье, ",
-                "Лёгкое обезвоживание, ",
-                "Обезвоживание, ",
-                "Серьезное обезвоживание, "
-            },
-            hunger = {
-                "Нет нужды в еде, ",
-                "Лёгкое голодание, ",
-                "Голодание, ",
-                "Серьезное голодание, "
-            },
-            fatigue = {
-                "Вы в состоянии бодрости, ",
-                "Лёгкая усталость, ",
-                "Усталость, ",
-                "Значительная усталость, "
-            }
+            thirst = {"Нет нужды в питье, ", "Лёгкое обезвоживание, ", "Обезвоживание, ", "Серьезное обезвоживание, "},
+            hunger = {"Нет нужды в еде, ", "Лёгкое голодание, ", "Голодание, ", "Серьезное голодание, "},
+            fatigue = {"Вы в состоянии бодрости, ", "Лёгкая усталость, ", "Усталость, ", "Значительная усталость, "}
         },
         settings = {
             category = {
@@ -926,310 +791,265 @@ local Strings = {
             }
         }
     },
-    ["cz-cz"] = { -- Czech
-        thirst = "Thirst",
-        hunger = "Hunger",
-        fatigue = "Fatigue",
+    ["cz-cz"] = { -- Czech thanks to Ilyatim2000
+        thirst = "Žízeň",
+        hunger = "Hlad",
+        fatique = "Unavený",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"Jsi hydratovaný, ", "Nízká dehydratace, ", "Dehydratace, ", "Silná dehydratace, "},
+            hunger = {"Jsi nakrmený, ", "Nízká podvýživa, ", "Podvýživa, ", "Silná podvýživa, "},
+            fatique = {"Jsi odpocinutý, ", "Nízké vycerpání, ", "Vicerpání, ", "Težké vycerpání, "}
         },
         settings = {
             category = {
-                game = "Game Settings",
-                thirst = "Thirst Settings",
-                hunger = "Hunger Settings",
-                fatigue = "Fatigue Settings",
-                display = "Display Settings"
+                game = "Nastavení hry",
+                thirst = "Nastavení žízne",
+                hunger = "Nastavení hladu",
+                fatique = "Nastavení únavy",
+                display = "Nastavení displeje"
             },
             options = {
                 game = {
                     gamepad = {
                         label = "Gamepad",
-                        description = "Enable/Disable Gamepad Support (Left D-pad)"
+                        description = "Povolit/zakázat podporu gamepadu (levý D-pad)"
                     },
                     difficulty = {
-                        label = "Difficulty",
-                        description = "Defines the amount of debuffs applied when your needs are low.",
+                        label = "Obtížnost",
+                        description = "Definuje množství debuffu aplikovaných, když jsou vaše potreby nízké.",
                         mode = {
-                            [1] = "Easy",
-                            [2] = "Normal",
-                            [3] = "Hard"
+                            [1] = "Snadné",
+                            [2] = "Normální",
+                            [3] = "Težké"
                         }
                     }
                 },
                 thirst = {
                     dayPool = {
-                        label = "Thirst reserve (in-game days)",
-                        description = "Sets thirst reserve in number of game days."
+                        label = "Rezerva žízne (ve hre dny)",
+                        description = "Nastavuje rezervu žízne v po?tu herních dnu."
                     },
                     regenMultiplier = {
-                        label = "Thirst regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to thirst."
+                        label = "Multiplikátor regenerace žízne",
+                        description = "Nastaví multiplikátor na všechny regenerace aplikované na žízen."
                     },
                     costMultiplier = {
-                        label = "Thirst cost multiplier",
-                        description = "Sets the multiplier on all costs applied to thirst."
+                        label = "Multiplikátor nákladu na žízen",
+                        description = "Nastaví násobitel všech nákladu aplikovaných na žízen."
                     }
                 },
                 hunger = {
                     dayPool = {
-                        label = "Hunger reserve (in-game days)",
-                        description = "Sets hunger reserve in number of game days."
+                        label = "Hladová rezerva (ve hre dny)",
+                        description = "Nastavuje rezervu hladu v po?tu herních dnu."
                     },
                     regenMultiplier = {
-                        label = "Hunger regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to hunger."
+                        label = "Multiplikátor regenerace hladu",
+                        description = "Nastaví multiplikátor na všechny regenerace aplikované na hlad."
                     },
                     costMultiplier = {
-                        label = "Hunger cost multiplier",
-                        description = "Sets the multiplier on all costs applied to hunger."
+                        label = "Násobitel hladových nákladu",
+                        description = "Nastaví násobitel všech nákladu aplikovaných na hlad."
                     }
                 },
-                fatigue = {
+                fatique = {
                     dayPool = {
-                        label = "Fatigue reserve (in-game days)",
-                        description = "Sets fatigue reserve in number of game days."
+                        label = "Rezerva únavy (ve hre dny)",
+                        description = "Nastaví rezervu únavy v poctu herních dnu."
                     },
                     regenMultiplier = {
-                        label = "Fatigue regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to fatigue."
+                        label = "Multiplikátor regenerace únavy",
+                        description = "Nastaví multiplikátor na všechny regenerace aplikované na únavu."
                     },
                     costMultiplier = {
-                        label = "Fatigue cost multiplier",
-                        description = "Sets the multiplier on all costs applied to fatigue."
+                        label = "Multiplikátor nákladu na únavu",
+                        description = "Nastaví multiplikátor na všechny náklady aplikované na únavu."
                     }
                 },
                 display = {
                     notif = {
-                        label = "Notifications",
-                        description = "Enable/Disable the display of automatic needs level notifications."
+                        label = "Oznámení",
+                        description = "Povolit/zakázat zobrazování automatických upozornení na úrovni potreb."
                     },
                     warning = {
-                        label = "Status warning",
-                        description = "Enable/Disable display of detailed status warning during notifications."
+                        label = "Upozornení na stav",
+                        description = "Povolit/zakázat zobrazování podrobného upozornení na stav behem upozornení."
                     }
                 }
             }
         }
     },
-    ["hu-hu"] = { -- Hungarian
-        thirst = "Thirst",
-        hunger = "Hunger",
-        fatigue = "Fatigue",
+    ["hu-hu"] = { -- Hungarian thanks to Ilyatim2000
+        thirst = "Szomjúság",
+        hunger = "Éhezés",
+        fatigue = "Fáradtság",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"Te hidratált, ", "Alascony Kiszáradás, ", "Kiszáradás, ", "Súlyos kiszáradás, "},
+            hunger = {"Te etetik, ", "Alascony alultápláltság, ", "Alultápláltság, ", "Súlyos alultápláltság, "},
+            fatique = {"Te pihent, ", "Alascony kimerültség, ", "Kimerültség, ", "Súlyos kimerültség, "}
         },
         settings = {
             category = {
-                game = "Game Settings",
-                thirst = "Thirst Settings",
-                hunger = "Hunger Settings",
-                fatigue = "Fatigue Settings",
-                display = "Display Settings"
+                game = "Játék Beállítások",
+                thirst = "Szomjúság Beállítások",
+                hunger = "Éhség Beállítások",
+                fatigue = "Fáradtság Beállítások",
+                display = "Megjelenítéséhez Beállítások"
             },
             options = {
                 game = {
                     gamepad = {
                         label = "Gamepad",
-                        description = "Enable/Disable Gamepad Support (Left D-pad)"
+                        description = "Engedélyezése / tiltása gamepad támogatást (Bal D-pad)"
                     },
                     difficulty = {
-                        label = "Difficulty",
-                        description = "Defines the amount of debuffs applied when your needs are low.",
+                        label = "Nehézségi",
+                        description = "Meghatározza az összeg debuffot alkalmazni, amikor az Ön igényeinek is alacsony.",
                         mode = {
-                            [1] = "Easy",
-                            [2] = "Normal",
-                            [3] = "Hard"
+                            [1] = "Könnyen",
+                            [2] = "Normál",
+                            [3] = "Kemény"
                         }
                     }
                 },
                 thirst = {
                     dayPool = {
-                        label = "Thirst reserve (in-game days)",
-                        description = "Sets thirst reserve in number of game days."
+                        label = "Szomjúság tartalék (játék közbeni alváz)",
+                        description = "Állítja szomjúság tartalék számos játék a napokban."
                     },
                     regenMultiplier = {
-                        label = "Thirst regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to thirst."
+                        label = "Szomjúság regeneráció szorzó",
+                        description = "Beállítja a szorzó minden regeneráció alkalmazott szomjúság."
                     },
                     costMultiplier = {
-                        label = "Thirst cost multiplier",
-                        description = "Sets the multiplier on all costs applied to thirst."
+                        label = "Szomjuság költség szorzó",
+                        description = "Beállítja a szorzót minden költséget alkalmazott szomjúság."
                     }
                 },
                 hunger = {
                     dayPool = {
-                        label = "Hunger reserve (in-game days)",
-                        description = "Sets hunger reserve in number of game days."
+                        label = "Éhezés park (játék közbeni alváz)",
+                        description = "Készletei éhség tartalék számos játék a napokban."
                     },
                     regenMultiplier = {
-                        label = "Hunger regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to hunger."
+                        label = "Éhezés regeneráció szorzó",
+                        description = "Beállítja a szorzó minden regeneráció alkalmazott éhség."
                     },
                     costMultiplier = {
-                        label = "Hunger cost multiplier",
-                        description = "Sets the multiplier on all costs applied to hunger."
+                        label = "Éhezés költség szorzó",
+                        description = "Beállítja a szorzót minden költséget alkalmazott éhség."
                     }
                 },
                 fatigue = {
                     dayPool = {
-                        label = "Fatigue reserve (in-game days)",
-                        description = "Sets fatigue reserve in number of game days."
+                        label = "Fáradtság park (játék közbeni alváz)",
+                        description = "Készletei fáradtság tartalék számos játék a napokban."
                     },
                     regenMultiplier = {
-                        label = "Fatigue regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to fatigue."
+                        label = "Fáradtság regeneráció szorzó",
+                        description = "Beállítja a szorzó minden regeneráció alkalmazott fáradtság."
                     },
                     costMultiplier = {
-                        label = "Fatigue cost multiplier",
-                        description = "Sets the multiplier on all costs applied to fatigue."
+                        label = "Fáradtság költség szorzó",
+                        description = "Beállítja a szorzót minden költséget alkalmazott fáradtság."
                     }
                 },
                 display = {
                     notif = {
-                        label = "Notifications",
-                        description = "Enable/Disable the display of automatic needs level notifications."
+                        label = "Értesítések",
+                        description = "Engedélyezése / tiltása a kijelz? automatikus szükségletek szintjét értesítést."
                     },
                     warning = {
-                        label = "Status warning",
-                        description = "Enable/Disable display of detailed status warning during notifications."
+                        label = "Állapot figyelmeztetés",
+                        description = "Engedélyezése / tiltása megjelenítésének részletes állapot figyelmeztetést értesítéseket."
                     }
                 }
             }
         }
     },
-    ["tr-tr"] = { -- Turkish
-        thirst = "Thirst",
-        hunger = "Hunger",
-        fatigue = "Fatigue",
+    ["tr-tr"] = { -- Turkish thanks to Ilyatim2000
+        thirst = "Susuzluk",
+        hunger = "Açlik",
+        fatigue = "Yorgunluk",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"Susuz kaldin, ", "Düsük Dehidrasyon, ", "Dehidrasyon, ", "Siddetli Dehidrasyon, "},
+            hunger = {"Besleniyorsun, ", "Düsük Yetersiz Beslenme, ", "Yetersiz beslenme, ", "Agir Yetersiz Beslenme, "},
+            fatigue = {"Dinlendin, ", "Düsük Tükenme, ", "Yorgunluk, ", "Siddetli Yorgunluk, "}
         },
         settings = {
             category = {
-                game = "Game Settings",
-                thirst = "Thirst Settings",
-                hunger = "Hunger Settings",
-                fatigue = "Fatigue Settings",
-                display = "Display Settings"
+                game = "Oyun Ayarlari",
+                thirst = "Susuzluk Ayarlari",
+                hunger = "Açlik Ayarlari",
+                fatigue = "Yorgunluk Ayarlari",
+                display = "Görüntü Ayarlari"
             },
             options = {
                 game = {
                     gamepad = {
-                        label = "Gamepad",
-                        description = "Enable/Disable Gamepad Support (Left D-pad)"
+                        label = "Oyun kumandasi",
+                        description = "Oyun kumandasi Destegini Etkinlestir/Devre Disi Birak (Sol D-pad)"
                     },
                     difficulty = {
-                        label = "Difficulty",
-                        description = "Defines the amount of debuffs applied when your needs are low.",
+                        label = "Zorluk",
+                        description = "Ihtiyaçlariniz düsük oldugunda uygulanan debuff'larin miktarini tanimlar.",
                         mode = {
-                            [1] = "Easy",
+                            [1] = "Kolay",
                             [2] = "Normal",
-                            [3] = "Hard"
+                            [3] = "Zor"
                         }
                     }
                 },
                 thirst = {
                     dayPool = {
-                        label = "Thirst reserve (in-game days)",
-                        description = "Sets thirst reserve in number of game days."
+                        label = "Susuzluk rezervi (oyun içi günler)",
+                        description = "Oyun günü sayisi olarak susuzluk rezervini ayarlar."
                     },
                     regenMultiplier = {
-                        label = "Thirst regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to thirst."
+                        label = "Susuzluk rejenerasyon çarpani",
+                        description = "Susamaya uygulanan tüm rejenerasyonlarda çarpani ayarlar."
                     },
                     costMultiplier = {
-                        label = "Thirst cost multiplier",
-                        description = "Sets the multiplier on all costs applied to thirst."
+                        label = "Susuzluk maliyet çarpani",
+                        description = "Susuzluga uygulanan tüm maliyetlerin çarpanini ayarlar."
                     }
                 },
                 hunger = {
                     dayPool = {
-                        label = "Hunger reserve (in-game days)",
-                        description = "Sets hunger reserve in number of game days."
+                        label = "Açlik rezervi (oyun içi günler)",
+                        description = "Oyun günü sayisi olarak açlik rezervini ayarlar."
                     },
                     regenMultiplier = {
-                        label = "Hunger regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to hunger."
+                        label = "Açlik yenileme çarpani",
+                        description = "Açliga uygulanan tüm yenilemelerde çarpani ayarlar."
                     },
                     costMultiplier = {
-                        label = "Hunger cost multiplier",
-                        description = "Sets the multiplier on all costs applied to hunger."
+                        label = "Açlik maliyeti çarpani",
+                        description = "Açliga uygulanan tüm maliyetlerin çarpanini ayarlar."
                     }
                 },
                 fatigue = {
                     dayPool = {
-                        label = "Fatigue reserve (in-game days)",
-                        description = "Sets fatigue reserve in number of game days."
+                        label = "Yorgunluk rezervi (oyun içi günler)",
+                        description = "Yorgunluk rezervini oyun günü sayisi olarak ayarlar."
                     },
                     regenMultiplier = {
-                        label = "Fatigue regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to fatigue."
+                        label = "Yorgunluk yenileme çarpani",
+                        description = "Yorgunluga uygulanan tüm yenilemelerde çarpani ayarlar."
                     },
                     costMultiplier = {
-                        label = "Fatigue cost multiplier",
-                        description = "Sets the multiplier on all costs applied to fatigue."
+                        label = "Yorgunluk maliyeti çarpani",
+                        description = "Yorgunluga uygulanan tüm maliyetlerin çarpanini ayarlar."
                     }
                 },
                 display = {
                     notif = {
-                        label = "Notifications",
-                        description = "Enable/Disable the display of automatic needs level notifications."
+                        label = "Bildirimler",
+                        description = "Otomatik ihtiyaç düzeyi bildirimlerinin görüntülenmesini etkinle?tirin/devre disi birakin."
                     },
                     warning = {
-                        label = "Status warning",
-                        description = "Enable/Disable display of detailed status warning during notifications."
+                        label = "Durum uyarisi",
+                        description = "Bildirimler sirasinda ayrintili durum uyarisinin görüntülenmesini etkinlestirin/devre disi birakin."
                     }
                 }
             }
@@ -1240,24 +1060,9 @@ local Strings = {
         hunger = "Hunger",
         fatigue = "Fatigue",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
+            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
+            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
         },
         settings = {
             category = {
@@ -1343,24 +1148,9 @@ local Strings = {
         hunger = "Hunger",
         fatigue = "Fatigue",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
+            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
+            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
         },
         settings = {
             category = {
@@ -1446,24 +1236,9 @@ local Strings = {
         hunger = "Hunger",
         fatigue = "Fatigue",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
+            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
+            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
         },
         settings = {
             category = {
@@ -1549,24 +1324,9 @@ local Strings = {
         hunger = "Hunger",
         fatigue = "Fatigue",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
+            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
+            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
         },
         settings = {
             category = {
@@ -1652,24 +1412,9 @@ local Strings = {
         hunger = "Hunger",
         fatigue = "Fatigue",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
+            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
+            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
         },
         settings = {
             category = {
@@ -1755,24 +1500,9 @@ local Strings = {
         hunger = "Hunger",
         fatigue = "Fatigue",
         step = {
-            thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
-            },
-            hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
-            },
-            fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
-            }
+            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
+            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
+            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
         },
         settings = {
             category = {
