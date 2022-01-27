@@ -827,7 +827,7 @@ local Strings = {
                 thirst = {
                     dayPool = {
                         label = "Rezerva žízne (ve hre dny)",
-                        description = "Nastavuje rezervu žízne v po?tu herních dnu."
+                        description = "Nastavuje rezervu žízne v počtu herních dnu."
                     },
                     regenMultiplier = {
                         label = "Multiplikátor regenerace žízne",
@@ -841,7 +841,7 @@ local Strings = {
                 hunger = {
                     dayPool = {
                         label = "Hladová rezerva (ve hre dny)",
-                        description = "Nastavuje rezervu hladu v po?tu herních dnu."
+                        description = "Nastavuje rezervu hladu v počtu herních dnu."
                     },
                     regenMultiplier = {
                         label = "Multiplikátor regenerace hladu",
@@ -957,7 +957,7 @@ local Strings = {
                 display = {
                     notif = {
                         label = "Értesítések",
-                        description = "Engedélyezése / tiltása a kijelz? automatikus szükségletek szintjét értesítést."
+                        description = "Engedélyezése / tiltása a kijelzős automatikus szükségletek szintjét értesítést."
                     },
                     warning = {
                         label = "Állapot figyelmeztetés",
@@ -1045,7 +1045,7 @@ local Strings = {
                 display = {
                     notif = {
                         label = "Bildirimler",
-                        description = "Otomatik ihtiyaç düzeyi bildirimlerinin görüntülenmesini etkinle?tirin/devre disi birakin."
+                        description = "Otomatik ihtiyaç düzeyi bildirimlerinin görüntülenmesini etkinlestirin/devre disi birakin."
                     },
                     warning = {
                         label = "Durum uyarisi",
