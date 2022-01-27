@@ -617,58 +617,58 @@ local Strings = {
             }
         }
     },
-    ["pt-br"] = { -- Brazilian Portuguese
-        thirst = "Thirst",
-        hunger = "Hunger",
-        fatigue = "Fatigue",
+    ["pt-br"] = { -- Brazilian Portuguese 
+        thirst = "Sede",
+        hunger = "Fome",
+        fatigue = "Fadiga",
         step = {
             thirst = {
-                "You are hydrated, ",
-                "Low Dehydration, ",
-                "Dehydration, ",
-                "Severe Dehydration, "
+                "Você está hidratado, ",
+                "Baixa Desidratação, ",
+                "Desidratação, ",
+                "Desidratação Grave, "
             },
             hunger = {
-                "You are fed, ",
-                "Low Undernourishment, ",
-                "Undernourishment, ",
-                "Severe Undernourishment, "
+                "Você está alimentado, ",
+                "Baixa desnutrição, ",
+                "Desnutrição Cronica, ",
+                "Desnutrição Grave, "
             },
             fatigue = {
-                "You are rested, ",
-                "Low Exhaustion, ",
-                "Exhaustion, ",
-                "Severe Exhaustion, "
+                "Você está descansado, ",
+                "Baixa exaustão, ",
+                "Exaustão, ",
+                "Exaustão Grave, "
             }
         },
         settings = {
             category = {
-                game = "Game Settings",
-                thirst = "Thirst Settings",
-                hunger = "Hunger Settings",
-                fatigue = "Fatigue Settings",
-                display = "Display Settings"
+                game = "Configuração",
+                thirst = "Configurações de sede",
+                hunger = "Configurações de Fome",
+                fatigue = "Configurações de fadiga",
+                display = "Configurações do visor"
             },
             options = {
                 game = {
                     gamepad = {
-                        label = "Gamepad",
-                        description = "Enable/Disable Gamepad Support (Left D-pad)"
+                        label = "Controle",
+                        description = "Ativar/desativar o suporte ao controle (D-pad esquerdo)"
                     },
                     difficulty = {
-                        label = "Difficulty",
-                        description = "Defines the amount of debuffs applied when your needs are low.",
+                        label = "Dificuldade",
+                        description = "Define a quantidade de debuffs aplicados quando sua necessidade são baixas",
                         mode = {
-                            [1] = "Easy",
+                            [1] = "Fácil",
                             [2] = "Normal",
-                            [3] = "Hard"
+                            [3] = "Difícil"
                         }
                     }
                 },
                 thirst = {
                     dayPool = {
-                        label = "Thirst reserve (in-game days)",
-                        description = "Sets thirst reserve in number of game days."
+                        label = "Reserva de sede (dias de jogo)",
+                        description = "Define a reserva de sede em número de dias de jogo."
                     },
                     regenMultiplier = {
                         label = "Thirst regeneration multiplier",
