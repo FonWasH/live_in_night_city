@@ -26,10 +26,15 @@ It's brings more gameplay/immersion with character needs.
 ## Roadmap
 
 - Finish the translation
-- Rework HUD
+- Compatibility for mod house/hotel
+- More location/opportunity to rest (ex: sleep in car)
+- Sound effects
 - Drug usage
+- Craft only in apartment's stash or vehicle's stash
 - Link mod with player's sex scene, attributes and cyber-mods
-- Housing ? (craft only in V's apartment...etc)
+- Detailed warning status
+- Rework HUD
+- Limit save / Alternative death
 
 
 ## Screenshots
