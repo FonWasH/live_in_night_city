@@ -268,172 +268,172 @@ local Strings = {
         hunger = "Hambre",
         fatigue = "Fatiga",
         step = {
-            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
-            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
-            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
+            thirst = {"Estás hidratado, ", "Deshidratación baja, ", "Deshidratación, ", "Deshidratación severa, "},
+            hunger = {"Estás alimentado, ", "Desnutrición baja, ", "Desnutrición, ", "Desnutrición severa, "},
+            fatigue = {"Estás descansado, ", "Bajo agotamiento, ", "Agotamiento, ", "Agotamiento severo, "}
         },
         settings = {
             category = {
-                game = "Game Settings",
-                thirst = "Thirst Settings",
-                hunger = "Hunger Settings",
-                fatigue = "Fatigue Settings",
-                display = "Display Settings"
+                game = "Configuración del juego",
+                thirst = "Configuración de sed",
+                hunger = "Configuración de hambre",
+                fatigue = "Configuración de fatiga",
+                display = "Configuración de pantalla"
             },
             options = {
                 game = {
                     gamepad = {
-                        label = "Gamepad",
-                        description = "Enable/Disable Gamepad Support (Left D-pad)"
+                        label = "Mando",
+                        description = "Habilitar/Deshabilitar la compatibilidad con Mando (D-pad izquierdo)"
                     },
                     difficulty = {
-                        label = "Difficulty",
-                        description = "Defines the amount of debuffs applied when your needs are low.",
+                        label = "Dificultad",
+                        description = "Define la cantidad de desventajas aplicadas cuando tus necesidades son bajas.",
                         mode = {
-                            [1] = "Easy",
+                            [1] = "Fácil",
                             [2] = "Normal",
-                            [3] = "Hard"
+                            [3] = "Difícil"
                         }
                     }
                 },
                 thirst = {
                     dayPool = {
-                        label = "Thirst reserve (in-game days)",
-                        description = "Sets thirst reserve in number of game days."
+                        label = "Reserva de sed (días en el juego)",
+                        description = "Establece la reserva de sed en número de días de juego."
                     },
                     regenMultiplier = {
-                        label = "Thirst regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to thirst."
+                        label = "Multiplicador de regeneración de sed",
+                        description = "Establece el multiplicador en todas las regeneraciones aplicadas a la sed."
                     },
                     costMultiplier = {
-                        label = "Thirst cost multiplier",
-                        description = "Sets the multiplier on all costs applied to thirst."
+                        label = "Multiplicador de costo de sed",
+                        description = "Establece el multiplicador de todos los costos aplicados a la sed."
                     }
                 },
                 hunger = {
                     dayPool = {
-                        label = "Hunger reserve (in-game days)",
-                        description = "Sets hunger reserve in number of game days."
+                        label = "Reserva de hambre (días en el juego)",
+                        description = "Establece la reserva de hambre en número de días de juego."
                     },
                     regenMultiplier = {
-                        label = "Hunger regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to hunger."
+                        label = "Multiplicador de regeneración de hambre",
+                        description = "Establece el multiplicador en todas las regeneraciones aplicadas al hambre."
                     },
                     costMultiplier = {
-                        label = "Hunger cost multiplier",
-                        description = "Sets the multiplier on all costs applied to hunger."
+                        label = "Multiplicador del costo del hambre",
+                        description = "Establece el multiplicador de todos los costos aplicados al hambre."
                     }
                 },
                 fatigue = {
                     dayPool = {
-                        label = "Fatigue reserve (in-game days)",
-                        description = "Sets fatigue reserve in number of game days."
+                        label = "Reserva de fatiga (días de juego)",
+                        description = "Establece la reserva de fatiga en número de días de juego."
                     },
                     regenMultiplier = {
-                        label = "Fatigue regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to fatigue."
+                        label = "Multiplicador de regeneración de fatiga",
+                        description = "Establece el multiplicador en todas las regeneraciones aplicadas a la fatiga."
                     },
                     costMultiplier = {
-                        label = "Fatigue cost multiplier",
-                        description = "Sets the multiplier on all costs applied to fatigue."
+                        label = "Multiplicador de costos de fatiga",
+                        description = "Establece el multiplicador de todos los costos aplicados a la fatiga."
                     }
                 },
                 display = {
                     notif = {
-                        label = "Notifications",
-                        description = "Enable/Disable the display of automatic needs level notifications."
+                        label = "Notificaciones",
+                        description = "Habilitar/Deshabilitar la visualización de notificaciones automáticas de nivel de necesidades."
                     },
                     warning = {
-                        label = "Status warning",
-                        description = "Enable/Disable display of detailed status warning during notifications."
+                        label = "Advertencia de estado",
+                        description = "Habilitar/Deshabilitar la visualización de advertencias de estado detalladas durante las notificaciones."
                     }
                 }
             }
         }
     },
     ["es-mx"] = { -- Spanish
-        thirst = "Thirst",
-        hunger = "Hunger",
-        fatigue = "Fatigue",
+        thirst = "Sed",
+        hunger = "Hambre",
+        fatigue = "Fatiga",
         step = {
-            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
-            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
-            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
+            thirst = {"Estás hidratado, ", "Deshidratación baja, ", "Deshidratación, ", "Deshidratación severa, "},
+            hunger = {"Estás alimentado, ", "Desnutrición baja, ", "Desnutrición, ", "Desnutrición severa, "},
+            fatigue = {"Estás descansado, ", "Bajo agotamiento, ", "Agotamiento, ", "Agotamiento severo, "}
         },
         settings = {
             category = {
-                game = "Game Settings",
-                thirst = "Thirst Settings",
-                hunger = "Hunger Settings",
-                fatigue = "Fatigue Settings",
-                display = "Display Settings"
+                game = "Configuración del juego",
+                thirst = "Configuración de sed",
+                hunger = "Configuración de hambre",
+                fatigue = "Configuración de fatiga",
+                display = "Configuración de pantalla"
             },
             options = {
                 game = {
                     gamepad = {
-                        label = "Gamepad",
-                        description = "Enable/Disable Gamepad Support (Left D-pad)"
+                        label = "Mando",
+                        description = "Habilitar/Deshabilitar la compatibilidad con Mando (D-pad izquierdo)"
                     },
                     difficulty = {
-                        label = "Difficulty",
-                        description = "Defines the amount of debuffs applied when your needs are low.",
+                        label = "Dificultad",
+                        description = "Define la cantidad de desventajas aplicadas cuando tus necesidades son bajas.",
                         mode = {
-                            [1] = "Easy",
+                            [1] = "Fácil",
                             [2] = "Normal",
-                            [3] = "Hard"
+                            [3] = "Difícil"
                         }
                     }
                 },
                 thirst = {
                     dayPool = {
-                        label = "Thirst reserve (in-game days)",
-                        description = "Sets thirst reserve in number of game days."
+                        label = "Reserva de sed (días en el juego)",
+                        description = "Establece la reserva de sed en número de días de juego."
                     },
                     regenMultiplier = {
-                        label = "Thirst regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to thirst."
+                        label = "Multiplicador de regeneración de sed",
+                        description = "Establece el multiplicador en todas las regeneraciones aplicadas a la sed."
                     },
                     costMultiplier = {
-                        label = "Thirst cost multiplier",
-                        description = "Sets the multiplier on all costs applied to thirst."
+                        label = "Multiplicador de costo de sed",
+                        description = "Establece el multiplicador de todos los costos aplicados a la sed."
                     }
                 },
                 hunger = {
                     dayPool = {
-                        label = "Hunger reserve (in-game days)",
-                        description = "Sets hunger reserve in number of game days."
+                        label = "Reserva de hambre (días en el juego)",
+                        description = "Establece la reserva de hambre en número de días de juego."
                     },
                     regenMultiplier = {
-                        label = "Hunger regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to hunger."
+                        label = "Multiplicador de regeneración de hambre",
+                        description = "Establece el multiplicador en todas las regeneraciones aplicadas al hambre."
                     },
                     costMultiplier = {
-                        label = "Hunger cost multiplier",
-                        description = "Sets the multiplier on all costs applied to hunger."
+                        label = "Multiplicador del costo del hambre",
+                        description = "Establece el multiplicador de todos los costos aplicados al hambre."
                     }
                 },
                 fatigue = {
                     dayPool = {
-                        label = "Fatigue reserve (in-game days)",
-                        description = "Sets fatigue reserve in number of game days."
+                        label = "Reserva de fatiga (días de juego)",
+                        description = "Establece la reserva de fatiga en número de días de juego."
                     },
                     regenMultiplier = {
-                        label = "Fatigue regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to fatigue."
+                        label = "Multiplicador de regeneración de fatiga",
+                        description = "Establece el multiplicador en todas las regeneraciones aplicadas a la fatiga."
                     },
                     costMultiplier = {
-                        label = "Fatigue cost multiplier",
-                        description = "Sets the multiplier on all costs applied to fatigue."
+                        label = "Multiplicador de costos de fatiga",
+                        description = "Establece el multiplicador de todos los costos aplicados a la fatiga."
                     }
                 },
                 display = {
                     notif = {
-                        label = "Notifications",
-                        description = "Enable/Disable the display of automatic needs level notifications."
+                        label = "Notificaciones",
+                        description = "Habilitar/Deshabilitar la visualización de notificaciones automáticas de nivel de necesidades."
                     },
                     warning = {
-                        label = "Status warning",
-                        description = "Enable/Disable display of detailed status warning during notifications."
+                        label = "Advertencia de estado",
+                        description = "Habilitar/Deshabilitar la visualización de advertencias de estado detalladas durante las notificaciones."
                     }
                 }
             }
