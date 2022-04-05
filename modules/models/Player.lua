@@ -56,7 +56,7 @@ function Player:getScenePos()
     for location, restPos in pairs(POSITIONS) do
         if (playerPos.x >= (restPos.x - restPos.xOffset)) and (playerPos.x <= (restPos.x + restPos.xOffset)) and
         (playerPos.y >= (restPos.y - restPos.yOffset)) and (playerPos.y <= (restPos.y + restPos.yOffset)) and
-		(playerPos.z >= (restPos.z - restPos.zOffset)) and (playerPos.z <= (restPos.z + restPos.zOffset)) then
+	(playerPos.z >= (restPos.z - restPos.zOffset)) and (playerPos.z <= (restPos.z + restPos.zOffset)) then
             if (restPos.bed == true) then
                 self.actionRegen.sleep = true
             elseif (restPos.couch == true) then
