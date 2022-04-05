@@ -54,14 +54,15 @@ function Player:getScenePos()
     local playerPos = player:GetWorldPosition()
 
     for location, restPos in pairs(POSITIONS) do
-        if (playerPos.x >= restPos.x) and (playerPos.x <= (restPos.x + restPos.xOffset)) and
-        (playerPos.y >= restPos.y) and (playerPos.y <= (restPos.y + restPos.yOffset)) then
-            if location == "homeBed" then
+        if (playerPos.x >= (restPos.x - restPos.xOffset)) and (playerPos.x <= (restPos.x + restPos.xOffset)) and
+        (playerPos.y >= (restPos.y - restPos.yOffset)) and (playerPos.y <= (restPos.y + restPos.yOffset)) and
+		(playerPos.z >= (restPos.z - restPos.zOffset)) and (playerPos.z <= (restPos.z + restPos.zOffset)) then
+            if (restPos.bed == true) then
                 self.actionRegen.sleep = true
-            elseif location == "homeCouch" then
+            elseif (restPos.couch == true) then
                 self.state.enable = true
                 self.actionRegen.rest = true
-            elseif location == "homeShower" then
+            elseif (restPos.shower == true) then
                 self.state.enable = true
                 self.actionRegen.shower = true
             end
