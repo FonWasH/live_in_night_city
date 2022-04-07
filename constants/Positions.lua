@@ -5,7 +5,7 @@ local Positions = {
 		z = 123.1,
 		xSlack = 2.5,
 		ySlack = 2.0,
-		zSlack = 50000.2		-- temporary, take z out of equation
+		zSlack = 5.2		-- temporary, take z out of equation
     },
     h10Couch = {
 		x = -1378.3,
