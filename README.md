@@ -56,3 +56,4 @@ Settings
 
 #### Credits
 [psiberx](https://github.com/psiberx) for his [CET kit](https://github.com/psiberx/cp2077-cet-kit), which I used to create this mod.
+Nexusmods.com: TotorBlavic, DaniLt, and Zimluura for 1.5 apartment + partner support.
