@@ -1,7 +1,12 @@
 ![App Screenshot](https://i.ibb.co/PZFJvR5/logo.png)
+Modification to FonWasH's Live in Night City survival mode to include locations of apartments introduced in 1.5
 
 'Live in Night City' a.k.a. Survival Mode is a Cyberpunk 2077 Mod powered by Cyber Engine Tweaks.  
 It's brings more gameplay/immersion with character needs.
+* Added Z coordinate checking (otherwise you could rest on the couch in corpo plaza by walking towards the elvator on floor 0)
+* Offset renamed to Slack and applied on both sides of the declared coordinate in Positions.lua
+* substring search through position names (thanks DaniLt on nexusmods forums)
+* partner rest locations and bar locations (thanks DaniLt on nexusmods forums)
 
 
 ## Features
@@ -27,10 +32,10 @@ It's brings more gameplay/immersion with character needs.
 
 - Finish the translation
 - Compatibility for mod house/hotel
-- More location/opportunity to rest (ex: sleep in car)
+- More location/opportunity to rest (ex: sleep in car)
 - Sound effects
 - Drug usage
-- Craft only in apartment's stash or vehicle's stash
+- Craft only in apartment's stash or vehicle's stash
 - Link mod with player's sex scene, attributes and cyber-mods
 - Detailed warning status
 - Rework HUD
@@ -51,3 +56,4 @@ Settings
 
 #### Credits
 [psiberx](https://github.com/psiberx) for his [CET kit](https://github.com/psiberx/cp2077-cet-kit), which I used to create this mod.
+Nexusmods.com: TotorBlavic, DaniLt, and Zimluura for 1.5 apartment + partner support.

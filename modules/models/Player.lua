@@ -5,6 +5,9 @@ local thirst = require("modules/models/Need")
 local hunger = require("modules/models/Need")
 local fatigue = require("modules/models/Need")
 
+
+local GameHUD = require("modules/utils/GameHUD")
+
 Player = {}
 
 function Player:new()
@@ -49,22 +52,41 @@ function Player:reset()
     self.needs.fatigue:reset()
 end
 
+
+-- DaniLt on nexusmods forums came up with this good way to search for sub strings
+-- Had thought to try it this way too, but am too much of a noob at Lua to get the syntax right
 function Player:getScenePos()
     local player = Game.GetPlayer()
     local playerPos = player:GetWorldPosition()
 
     for location, restPos in pairs(POSITIONS) do
-        if (playerPos.x >= restPos.x) and (playerPos.x <= (restPos.x + restPos.xOffset)) and
-        (playerPos.y >= restPos.y) and (playerPos.y <= (restPos.y + restPos.yOffset)) then
-            if location == "homeBed" then
-                self.actionRegen.sleep = true
-            elseif location == "homeCouch" then
-                self.state.enable = true
-                self.actionRegen.rest = true
-            elseif location == "homeShower" then
-                self.state.enable = true
-                self.actionRegen.shower = true
-            end
+        if (playerPos.x >= (restPos.x - restPos.xSlack)) and (playerPos.x <= (restPos.x + restPos.xSlack)) and
+        (playerPos.y >= (restPos.y - restPos.ySlack)) and (playerPos.y <= (restPos.y + restPos.ySlack)) and
+		(playerPos.z >= (restPos.z - restPos.zSlack)) and (playerPos.z <= (restPos.z + restPos.zSlack)) then
+			if string.find(location, "Bed") ~= nil then
+				self.actionRegen.sleep = true
+				--Game.PrintHealth()
+				print("Sleeping in bed")
+				Notif.show()	
+			elseif string.find(location, "Couch") ~= nil then
+				self.state.enable = true
+				self.actionRegen.rest = true
+				--Game.PrintHealth()
+				print("Resting on couch")
+				Notif.show()
+			elseif string.find(location, "Bar") ~= nil then
+				self.state.enable = true
+				self.actionRegen.rest = true
+				--Game.PrintHealth()
+				print("Resting at bar")
+				Notif.show()
+			elseif string.find(location, "Shower") ~= nil then
+				self.state.enable = true
+				self.actionRegen.shower = true
+				--Game.PrintHealth()
+				print("Taking a shower")
+				Notif.show()
+			end
         end
     end
 end
