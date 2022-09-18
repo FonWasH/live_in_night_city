@@ -919,7 +919,7 @@ function GameSession.Listen(event, callback)
 	if type(event) == 'function' then
 		callback = event
 		for _, evt in pairs(GameSession.Event) do
-			if evt ~= GameSession.Event.Update and not eventScopes[evt][GameSession.Scope.Persistence] then
+			if evt ~= GameSession.Event.Update and not (eventScopes[evt] and eventScopes[evt][GameSession.Scope.Persistence]) then
 				GameSession.Observe(evt, callback)
 			end
 		end

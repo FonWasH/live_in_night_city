@@ -1,44 +1,6 @@
 local gameUI = require("modules/utils/GameUI")
-local dao = require("modules/utils/DAO")
 
 local Observers = {}
-
-local function saveObserver()
-    local saves = {}
-
-    Observe("LoadGameMenuGameController", "OnSaveMetadataReady", function(self, saveInfo)
-        saves[saveInfo.saveIndex] = {
-            timestamp = tostring(saveInfo.timestamp):gsub("ULL$", "")
-        }
-    end)
-
-    Observe("gameuiInGameMenuGameController", "OnSavingComplete", function(self, success)
-        if success then
-            for need, needData in pairs(Player.needs) do
-                dao.save(need, needData.state)
-            end
-        end
-    end)
-
-    Observe("LoadGameMenuGameController", "LoadSaveInGame", function(_, saveIndex)
-        if saves[saveIndex] ~= nil then
-            for need, _ in pairs(Player.needs) do
-                local needData = dao.load(need, saves[saveIndex].timestamp)
-                if needData ~= nil then
-                    for state, _ in pairs(Player.needs[need].state) do
-                        if needData[state] ~= nil then
-                            Player.needs[need].state[state] = needData[state]
-                        end
-                    end
-                end
-            end
-        else
-            Player:reset()
-        end
-        Player.state.refresh = true
-        saves = {}
-    end)
-end
 
 local function playerActionObserver()
     Observe('PlayerPuppet', 'OnAction', function(_, action)
@@ -90,7 +52,6 @@ local function playerActionObserver()
 end
 
 function Observers.init()
-    saveObserver()
     playerActionObserver()
     gameUI.Observe(function(state)
         if state.isDefault and not state.isJohnny then

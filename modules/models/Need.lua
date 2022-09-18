@@ -93,7 +93,7 @@ function Need:updateStep()
     self.state.step = 0
 
     for step, stepRange in pairs(self.config.step.range) do
-        if self.state.total > stepRange.min and self.state.total < stepRange.max then
+        if self.state.total > stepRange.min then
             self.state.step = step
         end
     end
@@ -124,16 +124,21 @@ end
 function Need:update(config, userSettings)
     self.config = config
     self.userSettings = userSettings
+    local prevTotal = self.state.total
 
     if Player.state.enable then
         self:updatePool()
         self:updateStep()
+		
+		if prevTotal ~= self.state.total and self.state.total % 10 == 0 and self.state.total > 1 then
+			Player.state.showNotif = true
+		end
 
         if self.state.prevStep ~= self.state.step or Player.state.refresh then
             Player.state.refresh = false
-            if self.state.step > 0 then
-                Player.state.showNotif = true
-            end
+			if self.state.step > 0 then
+				Player.state.showNotif = true
+			end
             refreshStatModifier(self.state, self.config.step.stats)
             refreshEffects(self.state, self.config.step.effects.persistent)
         end
