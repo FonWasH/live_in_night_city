@@ -1,11 +1,11 @@
 local DAO = {}
 
-function DAO.save(table, data)
+function DAO.save(table, data, sessionKey)
     db:execute(
         string.format(
             [[INSERT OR REPLACE INTO %s VALUES ('%s', '%s', '%s', '%s', '%s')]],
             table,
-            os.time(),
+            sessionKey,
             data.total,
             data.pool,
             data.step,
@@ -14,8 +14,8 @@ function DAO.save(table, data)
     )
 end
 
-function DAO.load(table, id)
-    local i, r = db:nrows(("SELECT * FROM %q WHERE id IN (%q, %q) LIMIT 1"):format(table, id, id + 1))
+function DAO.load(table, sessionKey)
+    local i, r = db:nrows(("SELECT * FROM %q WHERE id = %q"):format(table, sessionKey))
     return i(r)
 end
 
