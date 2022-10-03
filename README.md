@@ -16,6 +16,7 @@ It's brings more gameplay/immersion with character needs.
 - Dynamic status notification
 - Settings menu
 - Multi-language support
+- Mod support for Night City Interactions - Watson Drinks and Edgerunners locales
 
 
 ## Installation
