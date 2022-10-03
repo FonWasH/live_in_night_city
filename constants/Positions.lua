@@ -136,6 +136,22 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 2.0,
 		zSlack = 5.2
     },
+	friendscopCouch = {
+		x = -1406.7,
+		y = -921.8,
+		z = 7.4,
+		xSlack = 1.3,
+		ySlack = 1.2,
+		zSlack = 0.8
+	},
+	radionormadStand = {
+		x = -4073.0,
+		y = -6639.9,
+		z = 110.0,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
 	vofficeCouch = {
 		x = -1407.7,
 		y = 129.6,
@@ -898,7 +914,47 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		xSlack = 1.6,
 		ySlack = 1,
 		zSlack = 1.5
-	}, 
+	},
+	nciturboStand = {
+		x = -765.6,
+		y = 769.7,
+		z = 22.4,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	ncifaradayStand = {
+		x = 9.9,
+		y = -15.1,
+		z = 134.8,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	nciplazalucyStand = {
+		x = -1533.4,
+		y = -47.9,
+		z = 24.1,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	ncixbdtraumaStand = {
+		x = -1869.8,
+		y = 2678.4,
+		z = 7.1,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	ncitotentanzStand = {
+		x = -1760.8,
+		y = 2238.1,
+		z = 20.2,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
 	-- partner home coordiates
 	judyBed = {
 		x = -897.6,
