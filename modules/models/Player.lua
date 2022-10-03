@@ -80,6 +80,12 @@ function Player:getScenePos()
 				--Game.PrintHealth()
 				print("Resting at bar")
 				Notif.show()
+			elseif string.find(location, "Stand") ~= nil then
+				self.state.enable = true
+				self.actionRegen.wait = true
+				--Game.PrintHealth()
+				print("Resting at an Obstacle")
+				Notif.show()
 			elseif string.find(location, "Shower") ~= nil then
 				self.state.enable = true
 				self.actionRegen.shower = true

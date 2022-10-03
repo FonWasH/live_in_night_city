@@ -16,6 +16,7 @@ local Easy = {
             eat = -15,
             shower = -200,
             rest = 0
+			wait = 0
             --sex = 0, --wip
         },
         step = {
@@ -62,6 +63,7 @@ local Easy = {
             eat = -30,
             shower = 0,
             rest = 0
+			wait = 0
             --sex = 0, --wip
         },
         step = {
@@ -102,6 +104,7 @@ local Easy = {
             eat = 0.05,
             shower = -54,
             rest = -200
+			wait = -100
             --sex = 0, --wip
         },
         step = {
