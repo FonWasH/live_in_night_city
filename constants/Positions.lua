@@ -448,8 +448,16 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1.2,
 		zSlack = 1.2
     },
+	coyotepadreStand = {
+		x = -1257.9,
+		y = -990.7,
+		z = 16.0,
+		xSlack = 2.5,
+		ySlack = 1.2,
+		zSlack = 1.2
+    },
 	garagejstairCouch = {
-		x = 446.3,
+		x = -1176.7,
 		y = -999.0,
 		z = 13.0,
 		xSlack = 1.5,
@@ -713,6 +721,14 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1.3,
 		zSlack = 0.8
     },
+	waitodaStand = {
+		x = -930.4,
+		y = 1340.9,
+		z = 5.8,
+		xSlack = 1.5,
+		ySlack = 1.3,
+		zSlack = 0.8
+    },
 	waitsinnerCouch = {
 		x = -553.3,
 		y = -819.1,
@@ -843,6 +859,134 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		zSlack = 1.5
 	},
 	--MOD V's Edgerunners Mansion - Apartment - https://www.nexusmods.com/cyberpunk2077/mods/5437
+	vemguitarCouch = {
+		x = -1351.2,
+		y = 1210.4,
+		z = 114.9,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vemvrCouch = {
+		x = -1339.0,
+		y = 1210.4,
+		z = 114.9,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vemtvCouch = {
+		x = -1341.4,
+		y = 1202.2,
+		z = 114.8,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vemupperCouch = {
+		x = -1350.6,
+		y = 1205.4,
+		z = 118.9,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vemsackCouch = {
+		x = -1336.2,
+		y = 1206.7,
+		z = 118.8,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vemshowerCouch = {
+		x = -1346.2,
+		y = 1212.5,
+		z = 119.0,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vemsackoutCouch = {
+		x = -1352.3,
+		y = 1221.1,
+		z = 114.9,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vembankoutCouch = {
+		x = -1333.1,
+		y = 1207.5,
+		z = 115.0,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vembankcornerCouch = {
+		x = -1328.4,
+		y = 1188.9,
+		z = 115.0,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vempoolCouch = {
+		x = -1310.1,
+		y = 1219.3,
+		z = 111.1,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vemh10nStand = {
+		x = -1359.1,
+		y = 1199.2,
+		z = 114.9,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vemh10eStand = {
+		x = -1355.5,
+		y = 1217.1,
+		z = 114.9,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vempoolwStand = {
+		x = -1330.3,
+		y = 1214.2,
+		z = 114.9,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vempoolnStand = {
+		x = -1330.5,
+		y = 1199.1,
+		z = 114.9,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vemBed = {
+		x = -1337.6,
+		y = 1210.3,
+		z = 119.0,
+		xSlack = 3,
+		ySlack = 3,
+		zSlack = 1.5
+	},
+	vemShower = {
+		x = -1351.4,
+		y = 1212.1,
+		z = 119.0,
+		xSlack = 2,
+		ySlack = 2.5,
+		zSlack = 1.5
+	},
 	--MOD Night City Interactions - Watson Drinks and Edgerunners locales - https://www.nexusmods.com/cyberpunk2077/mods/5519
 	ncilizzyBar = {
 		x = -1174.3,
@@ -985,7 +1129,7 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		x = -897.6,
 		y = 1856.9,
 		z = 42.3,
-		xSlack = 2,
+		xSlack = 3,
 		ySlack = 3,
 		zSlack = 1.5
 	},
@@ -1095,8 +1239,12 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 	}
 }
 return Positions
---Ev Kabelscav	53.6 	-530.8 		-16.6
---shotndrink1 	516.4 	-2133.3 	30.2
---shotndrink2 	541.9 	-2121.5 	34.5
---shotndrink3 	552.8 	-2174.3 	38.2
---shotndrink4 585.3 -2180.7 46.9
+--[[ 
+Ev Kabelscav		53.6 		-530.8 		-16.6
+jack dooropen 		-1180.5 	-998.4		13.0
+jack dooropen2 		-1177.4 	-993.8		13.0
+shotndrink1 		516.4 		-2133.3 	30.2
+shotndrink2 		541.9 		-2121.5 	34.5
+shotndrink3 		552.8 		-2174.3 	38.2
+shotndrink4			585.3 		-2180.7 	46.9
+]]
