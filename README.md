@@ -17,6 +17,7 @@ It's brings more gameplay/immersion with character needs.
 - Settings menu
 - Multi-language support
 - Mod support for Night City Interactions - Watson Drinks and Edgerunners locales
+- Mod support for V's Edgerunners Mansion - Apartment DLC
 
 
 ## Installation
@@ -57,4 +58,4 @@ Settings
 
 #### Credits
 [psiberx](https://github.com/psiberx) for his [CET kit](https://github.com/psiberx/cp2077-cet-kit), which I used to create this mod.
-Nexusmods.com: TotorBlavic, DaniLt, and Zimluura for 1.5 apartment + partner support.
+Nexusmods.com: TotorBlavic, DaniLt, WarLord(UHMF), yadilloH and Zimluura for 1.5 apartment + partner support.
