@@ -304,10 +304,18 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1.3,
 		zSlack = 0.8
     },
-	cloudscabinCouch = {
+	cloudscabin6Couch = {
 		x = -657.7,
 		y = 793.8,
 		z = 128.4,
+		xSlack = 1.5,
+		ySlack = 1.3,
+		zSlack = 0.8
+    },
+	cloudscabin9Couch = {
+		x = -642.7,
+		y = 777.0,
+		z = 128.3,
 		xSlack = 1.5,
 		ySlack = 1.3,
 		zSlack = 0.8
@@ -818,6 +826,23 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 10,
 		zSlack = 5
 	},
+	catvicStroke = {
+		x = -1542.7,
+		y = 1214.2,
+		z = 15.4,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	judybalconyStand = {
+		x = -911.6,
+		y = 1874.2,
+		z = 42.3,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	--MOD V's Edgerunners Mansion - Apartment - https://www.nexusmods.com/cyberpunk2077/mods/5437
 	--MOD Night City Interactions - Watson Drinks and Edgerunners locales - https://www.nexusmods.com/cyberpunk2077/mods/5519
 	ncilizzyBar = {
 		x = -1174.3,
@@ -960,8 +985,8 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		x = -897.6,
 		y = 1856.9,
 		z = 42.3,
-		xSlack = 2.4,
-		ySlack = 2,
+		xSlack = 2,
+		ySlack = 3,
 		zSlack = 1.5
 	},
 	judyBar = {
@@ -1070,7 +1095,8 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 	}
 }
 return Positions
---shotndrink1 516.4 -2133.3 30.2
---shotndrink2 541.9 -2121.5 34.5
---shotndrink3 552.8 -2174.3 38.2
+--Ev Kabelscav	53.6 	-530.8 		-16.6
+--shotndrink1 	516.4 	-2133.3 	30.2
+--shotndrink2 	541.9 	-2121.5 	34.5
+--shotndrink3 	552.8 	-2174.3 	38.2
 --shotndrink4 585.3 -2180.7 46.9
