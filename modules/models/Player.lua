@@ -86,6 +86,17 @@ function Player:getScenePos()
 				--Game.PrintHealth()
 				print("Resting at an Obstacle")
 				Notif.show()
+			elseif string.find(location, "Stroke") ~= nil then
+				self.state.enable = true
+				self.actionRegen.stroke = true
+				--Game.PrintHealth()
+				print("Stroke a Pet")
+				Notif.show()
+			elseif string.find(location, "NetRun") ~= nil then
+				self.actionCost.melee = true
+				--Game.PrintHealth()
+				print("NetRuning")
+				Notif.show()
 			elseif string.find(location, "Shower") ~= nil then
 				self.state.enable = true
 				self.actionRegen.shower = true

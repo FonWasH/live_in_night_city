@@ -416,7 +416,7 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1.3,
 		zSlack = 0.8
     },
-	coyotemamaBar = {
+	coyotemamaBar = {--alk
 		x = -1251.7,
 		y = -991.3,
 		z = 12.4,
@@ -496,6 +496,14 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1.3,
 		zSlack = 0.8
     },
+	voodooNetRun = {
+		x = -1661.9,
+		y = -1875.5,
+		z = 55.0,
+		xSlack = 1.5,
+		ySlack = 3.3,
+		zSlack = 0.8
+    },
 	atlantisCouch = {
 		x = -1662.4,
 		y = -1868.8,
@@ -507,6 +515,14 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 	churchchipCouch = {
 		x = -1728.1,
 		y = -1940.1,
+		z = 61.5,
+		xSlack = 1.5,
+		ySlack = 1.3,
+		zSlack = 0.8
+    },
+	churchchip2Couch = {
+		x = -1744.0,
+		y = -1934.4,
 		z = 61.5,
 		xSlack = 1.5,
 		ySlack = 1.3,
@@ -576,7 +592,7 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1.3,
 		zSlack = 0.8
     },
-	redwoodmarketBar = {
+	redwoodmarketBar = {--eating
 		x = -431.8,
 		y = 670.9,
 		z = 115.0,
@@ -584,6 +600,22 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 0.5,
 		zSlack = 1.2
     },
+	arasakaspyStand = {
+		x = -291.3,
+		y = -1567.2,
+		z = 43.6,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	arasakaspy2Couch = {
+		x = -288.3,
+		y = -1569.4,
+		z = 43.5,
+		xSlack = 2.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
 	josseatCouch = {
 		x = 1246.5,
 		y = -520.4,
@@ -721,7 +753,7 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1.3,
 		zSlack = 0.8
     },
-	waitodaStand = {
+	waitodaCouch = {
 		x = -930.4,
 		y = 1340.9,
 		z = 5.8,
@@ -793,6 +825,14 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1.3,
 		zSlack = 0.8
     },
+	waitvoodooStand = {
+		x = -1749.3,
+		y = -1936.2,
+		z = 61.5,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
 	-- random places
 	h10coachCouch = {
 		x = -1431.3,
@@ -1243,6 +1283,7 @@ return Positions
 Ev Kabelscav		53.6 		-530.8 		-16.6
 jack dooropen 		-1180.5 	-998.4		13.0
 jack dooropen2 		-1177.4 	-993.8		13.0
+jack ofrenda opfer -1245.5		-1005.0		12.4
 shotndrink1 		516.4 		-2133.3 	30.2
 shotndrink2 		541.9 		-2121.5 	34.5
 shotndrink3 		552.8 		-2174.3 	38.2

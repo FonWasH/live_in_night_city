@@ -1,5 +1,6 @@
 local Strings = {
     ["en-us"] = { -- English
+		--name = "Live in Night City"
         thirst = "Thirst",
         hunger = "Hunger",
         fatigue = "Fatigue",
@@ -88,6 +89,7 @@ local Strings = {
         }
     },
     ["fr-fr"] = { -- French
+		--name = "Live in Night City"
         thirst = "Soif",
         hunger = "Faim",
         fatigue = "Fatigue",
@@ -176,6 +178,7 @@ local Strings = {
         }
     },
     ["de-de"] = { -- German
+		--name = "Lebe in Night City"
         thirst = "Durst",
         hunger = "Hunger",
         fatigue = "Ermüdung",
@@ -264,6 +267,7 @@ local Strings = {
         }
     },
     ["es-es"] = { -- Spanish
+		--name = "Live in Night City"
         thirst = "Sed",
         hunger = "Hambre",
         fatigue = "Fatiga",
@@ -352,6 +356,7 @@ local Strings = {
         }
     },
     ["es-mx"] = { -- Spanish
+		--name = "Live in Night City"
         thirst = "Sed",
         hunger = "Hambre",
         fatigue = "Fatiga",
@@ -440,6 +445,7 @@ local Strings = {
         }
     },
     ["it-it"] = { -- Italian thanks to SabP
+		--name = "Vivi a Night City"
         thirst = "Sete",
         hunger = "Fame",
         fatigue = "Stanchezza",
@@ -528,6 +534,7 @@ local Strings = {
         }
     },
     ["pt-br"] = { -- Brazilian Portuguese 
+		--name = "Live in Night City"
         thirst = "Sede",
         hunger = "Fome",
         fatigue = "Fadiga",
@@ -616,6 +623,7 @@ local Strings = {
         }
     },
     ["pl-pl"] = { -- Polish
+		--name = "Live in Night City"
         thirst = "Pragnienie",
         hunger = "Głód",
         fatigue = "Zmęczenie",
@@ -704,6 +712,7 @@ local Strings = {
         }
     },
     ["ru-ru"] = { -- Russian thanks to jaderay
+		--name = "Live in Night City"
         thirst = "Жажда",
         hunger = "Голод",
         fatigue = "Усталость",
@@ -792,6 +801,7 @@ local Strings = {
         }
     },
     ["cz-cz"] = { -- Czech thanks to Ilyatim2000
+		--name = "Live in Night City"
         thirst = "Žízeň",
         hunger = "Hlad",
         fatique = "Unavený",
@@ -880,6 +890,7 @@ local Strings = {
         }
     },
     ["hu-hu"] = { -- Hungarian thanks to Ilyatim2000
+		--name = "Live in Night City"
         thirst = "Szomjúság",
         hunger = "Éhezés",
         fatigue = "Fáradtság",
@@ -968,6 +979,7 @@ local Strings = {
         }
     },
     ["tr-tr"] = { -- Turkish thanks to Ilyatim2000
+		--name = "Live in Night City"
         thirst = "Susuzluk",
         hunger = "Açlik",
         fatigue = "Yorgunluk",
@@ -1056,6 +1068,7 @@ local Strings = {
         }
     },
     ["ar-ar"] = { -- Arabic
+		--name = "Live in Night City"
         thirst = "Thirst",
         hunger = "Hunger",
         fatigue = "Fatigue",
@@ -1144,6 +1157,7 @@ local Strings = {
         }
     },
     ["jp-jp"] = { -- Japanese
+		--name = "Live in Night City"
         thirst = "脱水度",
         hunger = "空腹度",
         fatigue = "疲労度",
@@ -1232,6 +1246,7 @@ local Strings = {
         }
     },
     ["kr-kr"] = { -- Korean
+	--	name = "Live in Night City"
         thirst = "Thirst",
         hunger = "Hunger",
         fatigue = "Fatigue",
@@ -1320,6 +1335,7 @@ local Strings = {
         }
     },
     ["zh-cn"] = { -- Simplified Chinese
+		--name = "Live in Night City"
         thirst = "Thirst",
         hunger = "Hunger",
         fatigue = "Fatigue",
@@ -1408,6 +1424,7 @@ local Strings = {
         }
     },
     ["zh-tw"] = { -- Traditional Chinese
+		--name = "Live in Night City"
         thirst = "Thirst",
         hunger = "Hunger",
         fatigue = "Fatigue",
@@ -1496,6 +1513,7 @@ local Strings = {
         }
     },
     ["th-th"] = { -- Thai
+		--name = "Live in Night City"
         thirst = "Thirst",
         hunger = "Hunger",
         fatigue = "Fatigue",
