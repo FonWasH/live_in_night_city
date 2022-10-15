@@ -352,7 +352,7 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1.3,
 		zSlack = 0.8
     },
-	sunsetBar = { 
+	sunsetBar = { --drink
 		x = 1636.7,
 		y = -797.4,
 		z = 53.8,
@@ -376,6 +376,14 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 2.3,
 		zSlack = 2
 	},
+	panamplanStand = {
+		x = 1712.1,
+		y = -757.5,
+		z = 49.7,
+		xSlack = 2.5,
+		ySlack = 1.2,
+		zSlack = 1.2
+    },
 	sunsethellmanCouch = {
 		x = 1595.9,
 		y = -798.2,
@@ -890,6 +898,14 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1,
 		zSlack = 1.5
 	},
+	catnibblesStroke = {
+		x = -1398.5,
+		y = 1253.1,
+		z = 123.0,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
 	judybalconyStand = {
 		x = -911.6,
 		y = 1874.2,
@@ -1023,6 +1039,31 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		x = -1351.4,
 		y = 1212.1,
 		z = 119.0,
+		xSlack = 2,
+		ySlack = 2.5,
+		zSlack = 1.5
+	},
+	vemkitchenBar = {
+		x = 1337.5,
+		y = 1192.3,
+		z = 114.7,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	--MOD Lizzy's Bar Enhanced - https://www.nexusmods.com/cyberpunk2077/mods/5619
+	lbeBed = {
+		x = -1178.4,
+		y = 1585.5,
+		z = 26.9,
+		xSlack = 3,
+		ySlack = 3,
+		zSlack = 1.5
+	},
+	lbeShower = {
+		x = -1177.3,
+		y = 1592.3,
+		z = 26.9,
 		xSlack = 2,
 		ySlack = 2.5,
 		zSlack = 1.5
@@ -1197,6 +1238,14 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 2.5,
 		zSlack = 1.5
 	},
+	judyroofCouch = {
+		x = -904.5,
+		y = 1858.2,
+		z = 46.3,
+		xSlack = 6.3,
+		ySlack = 2.4,
+		zSlack = 1.5
+	},
 	randyBed = {
 		x = 1222.0,
 		y = -507.3,
@@ -1283,7 +1332,14 @@ return Positions
 Ev Kabelscav		53.6 		-530.8 		-16.6
 jack dooropen 		-1180.5 	-998.4		13.0
 jack dooropen2 		-1177.4 	-993.8		13.0
-jack ofrenda opfer -1245.5		-1005.0		12.4
+jack ofrenda opfer  -1245.5		-1005.0		12.4
+panam kiste 		3451.3 		-366.6 		133.6
+panam kofferraum    3375.5  	-343.7  	133.8
+panam gun help		1640.0		-766.9		49.9
+gunlink bridge		957.2		-1880.6		155.6
+carwindow lean		351.4  		-2464.6		181.7
+gunlink plant		-194.0		-2653.7		29.5
+dronelink av 		-538.0		-4976.9		77.0
 shotndrink1 		516.4 		-2133.3 	30.2
 shotndrink2 		541.9 		-2121.5 	34.5
 shotndrink3 		552.8 		-2174.3 	38.2
