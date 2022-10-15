@@ -88,9 +88,21 @@ function Player:getScenePos()
 				self.actionRegen.stroke = true
 				print("Stroke a Pet")
 				Notif.show()
-			elseif string.find(location, "NetRun") ~= nil then
+			elseif string.find(location, "Work") ~= nil then
 				self.actionCost.melee = true
-				print("NetRuning")
+				print("Working")
+				Notif.show()
+			elseif string.find(location, "Act") ~= nil then
+				self.actionCost.sprint = true
+				print("Acting")
+				Notif.show()
+			elseif string.find(location, "Drink") ~= nil then
+				self.actionCost.sprint = true
+				print("Drinking")
+				Notif.show()
+			elseif string.find(location, "Hack") ~= nil then
+				self.actionCost.jump = true
+				print("Hacking")
 				Notif.show()
 			elseif string.find(location, "Shower") ~= nil then
 				self.state.enable = true

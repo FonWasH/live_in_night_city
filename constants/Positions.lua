@@ -352,6 +352,22 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1.3,
 		zSlack = 0.8
     },
+	evscavplugAct = {
+		x = 53.6,
+		y = -530.8,
+		z = -16.6,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
+	panamcardoorAct = {
+		x = 3375.5,
+		y = -343.7,
+		z = 133.8,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
 	sunsetBar = { --drink
 		x = 1636.7,
 		y = -797.4,
@@ -376,6 +392,30 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 2.3,
 		zSlack = 2
 	},
+	panamchestWork = {
+		x = 3451.3,
+		y = -366.6,
+		z = 133.6,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
+	panamgunWork = {
+		x = 1640.0,
+		y = -766.9,
+		z = 49.9,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
+	avdoorWork = {
+		x = -667.8,
+		y = -5009.4,
+		z = 70.1,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},	
 	panamplanStand = {
 		x = 1712.1,
 		y = -757.5,
@@ -383,6 +423,46 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		xSlack = 2.5,
 		ySlack = 1.2,
 		zSlack = 1.2
+    },
+	carwindowStand = {
+		x = 351.4,
+		y = -2464.6,
+		z = 181.7,
+		xSlack = 2.5,
+		ySlack = 1.2,
+		zSlack = 1.2
+    },
+	gunbridgeHack = {
+		x = 957.2,
+		y = -1880.6,
+		z = 155.6,
+		xSlack = 1.5,
+		ySlack = 3.3,
+		zSlack = 0.8
+    },
+	gunplantHack = {
+		x = -194.0,
+		y = -2653.7,
+		z = 29.5,
+		xSlack = 1.5,
+		ySlack = 3.3,
+		zSlack = 0.8
+    },
+	dronelinkHack = {
+		x = -538.0,
+		y = -4976.9,
+		z = 77.0,
+		xSlack = 1.5,
+		ySlack = 3.3,
+		zSlack = 0.8
+    },
+	avgunHack = {
+		x = -671.8,
+		y = -5005.8,
+		z = 70.1,
+		xSlack = 1.5,
+		ySlack = 3.3,
+		zSlack = 0.8
     },
 	sunsethellmanCouch = {
 		x = 1595.9,
@@ -424,6 +504,62 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1.3,
 		zSlack = 0.8
     },
+	shot1nDrink = {
+		x = 516.4,
+		y = -2133.3,
+		z = 30.2,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
+	shot2nDrink = {
+		x = 541.9,
+		y = -2121.5,
+		z = 34.5,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
+	shot3nDrink = {
+		x = 552.8,
+		y = -2174.3,
+		z = 38.2,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
+	shot4nDrink = {
+		x = 585.3,
+		y = -2180.7,
+		z = 46.9,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
+	jackdoorAct = {
+		x = -1180.5,
+		y = -998.4,
+		z = 13.0,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
+	jackdoor2Act = {
+		x = -1177.4,
+		y = -993.8,
+		z = 13.0,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
+	coyoteofpreyAct = {
+		x = -1245.5,
+		y = -1005.0,
+		z = 12.4,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
 	coyotemamaBar = {--alk
 		x = -1251.7,
 		y = -991.3,
@@ -504,7 +640,7 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 1.3,
 		zSlack = 0.8
     },
-	voodooNetRun = {
+	voodooHack = {
 		x = -1661.9,
 		y = -1875.5,
 		z = 55.0,
@@ -1328,20 +1464,6 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 	}
 }
 return Positions
---[[ 
-Ev Kabelscav		53.6 		-530.8 		-16.6
-jack dooropen 		-1180.5 	-998.4		13.0
-jack dooropen2 		-1177.4 	-993.8		13.0
-jack ofrenda opfer  -1245.5		-1005.0		12.4
-panam kiste 		3451.3 		-366.6 		133.6
-panam kofferraum    3375.5  	-343.7  	133.8
-panam gun help		1640.0		-766.9		49.9
-gunlink bridge		957.2		-1880.6		155.6
-carwindow lean		351.4  		-2464.6		181.7
-gunlink plant		-194.0		-2653.7		29.5
-dronelink av 		-538.0		-4976.9		77.0
-shotndrink1 		516.4 		-2133.3 	30.2
-shotndrink2 		541.9 		-2121.5 	34.5
-shotndrink3 		552.8 		-2174.3 	38.2
-shotndrink4			585.3 		-2180.7 	46.9
+--[[
+
 ]]
