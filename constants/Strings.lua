@@ -10,7 +10,7 @@ local Strings = {
             fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
         },
         settings = {
-            category = {
+            category = { 
                 game = "Game Settings",
                 thirst = "Thirst Settings",
                 hunger = "Hunger Settings",
@@ -213,43 +213,43 @@ local Strings = {
                 },
                 thirst = {
                     dayPool = {
-                        label = "Durstreserve (tage im spiel)",
+                        label = "Durstreserve (Tage im Spiel)",
                         description = "Legt den Durstreserve in der Anzahl der Spieltage fest."
                     },
                     regenMultiplier = {
-                        label = "Durstregenerationsmultiplikator",
+                        label = "Durstregenerations-Multiplikator",
                         description = "Legt den Multiplikator für alle auf Durst angewendeten Regenerationen fest."
                     },
                     costMultiplier = {
-                        label = "Durstkostenmultiplikator",
+                        label = "Durstkosten-Multiplikator",
                         description = "Legt den Multiplikator für alle auf Durst angewendeten Kosten fest."
                     }
                 },
                 hunger = {
                     dayPool = {
-                        label = "Hungerreserve (tage im spiel)",
+                        label = "Hungerreserve (Tage im Spiel)",
                         description = "Legt den Hungerreserve in der Anzahl der Spieltage fest."
                     },
                     regenMultiplier = {
-                        label = "Hungerregenerationsmultiplikator",
+                        label = "Hungerregenerations-Multiplikator",
                         description = "Legt den Multiplikator für alle auf Hunger angewendeten Regenerationen fest."
                     },
                     costMultiplier = {
-                        label = "Hungerkostenmultiplikator",
+                        label = "Hungerkosten-Multiplikator",
                         description = "Legt den Multiplikator für alle auf Hunger angewendeten Kosten fest."
                     }
                 },
                 fatigue = {
                     dayPool = {
-                        label = "Ermüdungreserve (tage im spiel)",
+                        label = "Ermüdungreserve (Tage im Spiel)",
                         description = "Legt den Ermüdungsreserve in Anzahl der Spieltage fest."
                     },
                     regenMultiplier = {
-                        label = "Ermüdungsregenerationsmultiplikator",
+                        label = "Ermüdungsregenerations-Multiplikator",
                         description = "Legt den Multiplikator für alle auf Ermüdung angewendeten Regenerationen fest."
                     },
                     costMultiplier = {
-                        label = "Ermüdungskostenmultiplikator",
+                        label = "Ermüdungskosten-Multiplikator",
                         description = "Legt den Multiplikator für alle auf Ermüdung angewendeten Kosten fest."
                     }
                 },

@@ -34,6 +34,8 @@ function Player:new()
         eat = false,
         shower = false,
         rest = false,
+		wait = false,
+		stroke = false,
         sleep = false
         --sex = false --wip
     }
@@ -54,7 +56,6 @@ end
 
 
 -- DaniLt on nexusmods forums came up with this good way to search for sub strings
--- Had thought to try it this way too, but am too much of a noob at Lua to get the syntax right
 function Player:getScenePos()
     local player = Game.GetPlayer()
     local playerPos = player:GetWorldPosition()
@@ -65,42 +66,35 @@ function Player:getScenePos()
 		(playerPos.z >= (restPos.z - restPos.zSlack)) and (playerPos.z <= (restPos.z + restPos.zSlack)) then
 			if string.find(location, "Bed") ~= nil then
 				self.actionRegen.sleep = true
-				--Game.PrintHealth()
 				print("Sleeping in bed")
 				Notif.show()	
 			elseif string.find(location, "Couch") ~= nil then
 				self.state.enable = true
 				self.actionRegen.rest = true
-				--Game.PrintHealth()
 				print("Resting on couch")
 				Notif.show()
 			elseif string.find(location, "Bar") ~= nil then
 				self.state.enable = true
 				self.actionRegen.rest = true
-				--Game.PrintHealth()
 				print("Resting at bar")
 				Notif.show()
 			elseif string.find(location, "Stand") ~= nil then
 				self.state.enable = true
 				self.actionRegen.wait = true
-				--Game.PrintHealth()
 				print("Resting at an Obstacle")
 				Notif.show()
 			elseif string.find(location, "Stroke") ~= nil then
 				self.state.enable = true
 				self.actionRegen.stroke = true
-				--Game.PrintHealth()
 				print("Stroke a Pet")
 				Notif.show()
 			elseif string.find(location, "NetRun") ~= nil then
 				self.actionCost.melee = true
-				--Game.PrintHealth()
 				print("NetRuning")
 				Notif.show()
 			elseif string.find(location, "Shower") ~= nil then
 				self.state.enable = true
 				self.actionRegen.shower = true
-				--Game.PrintHealth()
 				print("Taking a shower")
 				Notif.show()
 			end
