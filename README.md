@@ -18,16 +18,19 @@ It's brings more gameplay/immersion with character needs.
 - Multi-language support
 - Mod support for Night City Interactions - Watson Drinks and Edgerunners locales
 - Mod support for V's Edgerunners Mansion - Apartment DLC
+- Mod support for Lizzy's Bar Enhanced
 
 
 ## Installation
 
 - Install [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks) (v1.18.1 or newer)
 - Install [Native Settings](https://github.com/justarandomguyintheinternet/CP77_nativeSettings) (v1.2 or newer)
+- Download Live in Night City via Code Button (green, top right corner)
 - Extract into the Cyber Engine Tweaks mod folder
 ```bash
 "Cyberpunk 2077/bin/x64/plugins/cyber_engine_tweaks/mods"
 ``` 
+at the end folder structure should be: Cyberpunk 2077/bin/x64/plugins/cyber_engine_tweaks/mods/live_in_night_city-main
 
 
 ## Roadmap
