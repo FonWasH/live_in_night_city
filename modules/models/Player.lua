@@ -34,6 +34,8 @@ function Player:new()
         eat = false,
         shower = false,
         rest = false,
+		cafe = false,
+		tea = false,
 		wait = false,
 		stroke = false,
         sleep = false
@@ -87,6 +89,16 @@ function Player:getScenePos()
 				self.state.enable = true
 				self.actionRegen.stroke = true
 				print("Stroke a Pet")
+				Notif.show()
+			elseif string.find(location, "Cafe") ~= nil then
+				self.state.enable = true
+				self.actionRegen.cafe = true
+				print("Drink Coffee")
+				Notif.show()
+			elseif string.find(location, "Tea") ~= nil then
+				self.state.enable = true
+				self.actionRegen.tea = true
+				print("Drink Tea")
 				Notif.show()
 			elseif string.find(location, "Work") ~= nil then
 				self.actionCost.melee = true

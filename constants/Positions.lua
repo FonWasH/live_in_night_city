@@ -51,7 +51,15 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		x = -784.5,
 		y = 976.7,
 		z = 28.2,
-		xSlack = 1.0,
+		xSlack = 0.5,
+		ySlack = 0.5,
+		zSlack = 0.2
+    },
+	japantownguitarCouch = {
+		x = -785.9,
+		y = 975.6,
+		z = 28.2,
+		xSlack = 0.5,
 		ySlack = 0.5,
 		zSlack = 0.2
     },
@@ -59,6 +67,14 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		x = -779.2,
 		y = 972.5,
 		z = 28.3,
+		xSlack = 0.5,
+		ySlack = 0.5,
+		zSlack = 0.3
+    },
+	japantownstickStroke = {
+		x = -787.5,
+		y = 978.3,
+		z = 28.1,
 		xSlack = 0.5,
 		ySlack = 0.5,
 		zSlack = 0.3
@@ -77,7 +93,7 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		z = 49.1,
 		xSlack = 3.75,
 		ySlack = 3.0,
-		zSlack = 0.5
+		zSlack = 1.5
     },
     corpoplazaCouch = {	
 		x = -1601.7,
@@ -93,23 +109,39 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		z = 49.3,
 		xSlack = 1.5,
 		ySlack = 1.5,
-		zSlack = 1.5
+		zSlack = 0.5
     },
 	corpoplazaBar = {
-		x = -1608.2,
-		y = 351.6,
-		z = 49.0,
-		xSlack = 1.6,
-		ySlack = 1.6,
-		zSlack = 1.0
+		x = -1607.4,
+		y = 352.0,
+		z = 49.4,
+		xSlack = 0.3,
+		ySlack = 0.5,
+		zSlack = 0.5
 	},
+	corpoplazaTea = {
+		x = -1606.8,
+		y = 350.1,
+		z = 49.3,
+		xSlack = 0.2,
+		ySlack = 0.3,
+		zSlack = 0.5
+	},
+	corpoplazaCafe = {	
+		x = -1608.8,
+		y = 350.2,
+		z = 49.4,
+		xSlack = 0.8,
+		ySlack = 0.5,
+		zSlack = 0.5
+    },
 	glenBed = {			
 		x = -1523.7,
 		y = -975.4,
 		z = 91.0,
 		xSlack = 2.75,
 		ySlack = 2.0,
-		zSlack = 0.2
+		zSlack = 0.4
     },
     glenCouch = {
 		x = -1520.7,
@@ -117,15 +149,31 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		z = 86.7,
 		xSlack = 1.0,
 		ySlack = 0.5,
-		zSlack = 0.2
+		zSlack = 0.3
     },
     glenShower = {
 		x = -1529.1,
 		y = -969.4,
 		z = 91.2,
-		xSlack = 0.2,
-		ySlack = 0.2,
-		zSlack = 0.2
+		xSlack = 0.5,
+		ySlack = 0.5,
+		zSlack = 0.5
+    },
+	glenCafe = {
+		x = -1525.6,
+		y = -982.8,
+		z = 86.9,
+		xSlack = 0.5,
+		ySlack = 0.5,
+		zSlack = 0.5
+    },
+	glenpoolAct = {
+		x = -1519.7,
+		y = -983.5,
+		z = 86.9,
+		xSlack = 0.5,
+		ySlack = 0.5,
+		zSlack = 0.5
     },
 	-- quests
 	brokennoseBar = {
@@ -207,6 +255,14 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		xSlack = 2.5,
 		ySlack = 2.0,
 		zSlack = 5.2
+    },
+	h10fightAct = {
+		x = -1430.1,
+		y = 1330.8,
+		z = 119.4,
+		xSlack = 2.5,
+		ySlack = 2.0,
+		zSlack = 3.2
     },
 	lizzyCouch = {
 		x = -1174.5,
@@ -392,7 +448,7 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 2.3,
 		zSlack = 2
 	},
-	panamchestWork = {
+	panamboxWork = {
 		x = 3451.3,
 		y = -366.6,
 		z = 133.6,
@@ -464,6 +520,22 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		ySlack = 3.3,
 		zSlack = 0.8
     },
+	hellmanfoundWork = {
+		x = -1868.0,
+		y = -4271.7,
+		z = 78.0,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
+	hellmanbikeWork = {
+		x = -1842.6,
+		y = -4300.4,
+		z = 74.0,
+		xSlack = 2.2,
+		ySlack = 2,
+		zSlack = 1.5
+	},
 	sunsethellmanCouch = {
 		x = 1595.9,
 		y = -798.2,
@@ -476,6 +548,14 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		x = 1595.9,
 		y = -786.5,
 		z = 49.8,
+		xSlack = 1.3,
+		ySlack = 1.3,
+		zSlack = 1
+	},
+	sunsetoutside2Couch = {
+		x = 1624.3,
+		y = -801.1,
+		z = 53.8,
 		xSlack = 1.3,
 		ySlack = 1.3,
 		zSlack = 1
@@ -540,7 +620,7 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		x = -1180.5,
 		y = -998.4,
 		z = 13.0,
-		xSlack = 2.2,
+		xSlack = 1.5,
 		ySlack = 2,
 		zSlack = 1.5
 	},
@@ -548,6 +628,14 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		x = -1177.4,
 		y = -993.8,
 		z = 13.0,
+		xSlack = 1.5,
+		ySlack = 2,
+		zSlack = 1.5
+	},
+	nixcaseAct = {
+		x = -224.7,
+		y = -96.9,
+		z = 2.7,
 		xSlack = 2.2,
 		ySlack = 2,
 		zSlack = 1.5
@@ -1180,9 +1268,17 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 		zSlack = 1.5
 	},
 	vemkitchenBar = {
-		x = 1337.5,
+		x = -1337.5,
 		y = 1192.3,
 		z = 114.7,
+		xSlack = 1.6,
+		ySlack = 1,
+		zSlack = 1.5
+	},
+	vemkitchenCafe = {
+		x = -1335.1,
+		y = 1188.9,
+		z = 115.0,
 		xSlack = 1.6,
 		ySlack = 1,
 		zSlack = 1.5
@@ -1465,5 +1561,6 @@ local Positions = { --Game.LogPlayerPositionAndName() // Game.AddToInventory("It
 }
 return Positions
 --[[
+
 
 ]]
