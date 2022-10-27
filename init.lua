@@ -6,7 +6,7 @@ local listeners = require("modules/controllers/Listeners")
 
 LiNC = {
     description = "Live in Night City (a.k.a. survival mode)",
-    version = "0.3",
+    version = "0.3.5",
     strings = {},
     config = {}
 }

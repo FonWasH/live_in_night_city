@@ -43,6 +43,7 @@ function User:menu()
     local menu = GetMod("nativeSettings")
 
     local name = "Live in Night City"
+    --local name = /LiNC/Strings.name
     local root = "/LiNC"
     local sep = "/"
 

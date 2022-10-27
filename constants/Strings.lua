@@ -1,5 +1,6 @@
 local Strings = {
     ["en-us"] = { -- English
+		--name = "Live in Night City"
         thirst = "Thirst",
         hunger = "Hunger",
         fatigue = "Fatigue",
@@ -9,7 +10,7 @@ local Strings = {
             fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
         },
         settings = {
-            category = {
+            category = { 
                 game = "Game Settings",
                 thirst = "Thirst Settings",
                 hunger = "Hunger Settings",
@@ -88,6 +89,7 @@ local Strings = {
         }
     },
     ["fr-fr"] = { -- French
+		--name = "Live in Night City"
         thirst = "Soif",
         hunger = "Faim",
         fatigue = "Fatigue",
@@ -176,6 +178,7 @@ local Strings = {
         }
     },
     ["de-de"] = { -- German
+		--name = "Lebe in Night City"
         thirst = "Durst",
         hunger = "Hunger",
         fatigue = "Ermüdung",
@@ -210,43 +213,43 @@ local Strings = {
                 },
                 thirst = {
                     dayPool = {
-                        label = "Durstreserve (tage im spiel)",
+                        label = "Durstreserve (Tage im Spiel)",
                         description = "Legt den Durstreserve in der Anzahl der Spieltage fest."
                     },
                     regenMultiplier = {
-                        label = "Durstregenerationsmultiplikator",
+                        label = "Durstregenerations-Multiplikator",
                         description = "Legt den Multiplikator für alle auf Durst angewendeten Regenerationen fest."
                     },
                     costMultiplier = {
-                        label = "Durstkostenmultiplikator",
+                        label = "Durstkosten-Multiplikator",
                         description = "Legt den Multiplikator für alle auf Durst angewendeten Kosten fest."
                     }
                 },
                 hunger = {
                     dayPool = {
-                        label = "Hungerreserve (tage im spiel)",
+                        label = "Hungerreserve (Tage im Spiel)",
                         description = "Legt den Hungerreserve in der Anzahl der Spieltage fest."
                     },
                     regenMultiplier = {
-                        label = "Hungerregenerationsmultiplikator",
+                        label = "Hungerregenerations-Multiplikator",
                         description = "Legt den Multiplikator für alle auf Hunger angewendeten Regenerationen fest."
                     },
                     costMultiplier = {
-                        label = "Hungerkostenmultiplikator",
+                        label = "Hungerkosten-Multiplikator",
                         description = "Legt den Multiplikator für alle auf Hunger angewendeten Kosten fest."
                     }
                 },
                 fatigue = {
                     dayPool = {
-                        label = "Ermüdungreserve (tage im spiel)",
+                        label = "Ermüdungreserve (Tage im Spiel)",
                         description = "Legt den Ermüdungsreserve in Anzahl der Spieltage fest."
                     },
                     regenMultiplier = {
-                        label = "Ermüdungsregenerationsmultiplikator",
+                        label = "Ermüdungsregenerations-Multiplikator",
                         description = "Legt den Multiplikator für alle auf Ermüdung angewendeten Regenerationen fest."
                     },
                     costMultiplier = {
-                        label = "Ermüdungskostenmultiplikator",
+                        label = "Ermüdungskosten-Multiplikator",
                         description = "Legt den Multiplikator für alle auf Ermüdung angewendeten Kosten fest."
                     }
                 },
@@ -264,6 +267,7 @@ local Strings = {
         }
     },
     ["es-es"] = { -- Spanish
+		--name = "Live in Night City"
         thirst = "Sed",
         hunger = "Hambre",
         fatigue = "Fatiga",
@@ -352,6 +356,7 @@ local Strings = {
         }
     },
     ["es-mx"] = { -- Spanish
+		--name = "Live in Night City"
         thirst = "Sed",
         hunger = "Hambre",
         fatigue = "Fatiga",
@@ -440,6 +445,7 @@ local Strings = {
         }
     },
     ["it-it"] = { -- Italian thanks to SabP
+		--name = "Vivi a Night City"
         thirst = "Sete",
         hunger = "Fame",
         fatigue = "Stanchezza",
@@ -528,6 +534,7 @@ local Strings = {
         }
     },
     ["pt-br"] = { -- Brazilian Portuguese 
+		--name = "Live in Night City"
         thirst = "Sede",
         hunger = "Fome",
         fatigue = "Fadiga",
@@ -616,6 +623,7 @@ local Strings = {
         }
     },
     ["pl-pl"] = { -- Polish
+		--name = "Live in Night City"
         thirst = "Pragnienie",
         hunger = "Głód",
         fatigue = "Zmęczenie",
@@ -704,6 +712,7 @@ local Strings = {
         }
     },
     ["ru-ru"] = { -- Russian thanks to jaderay
+		--name = "Live in Night City"
         thirst = "Жажда",
         hunger = "Голод",
         fatigue = "Усталость",
@@ -792,6 +801,7 @@ local Strings = {
         }
     },
     ["cz-cz"] = { -- Czech thanks to Ilyatim2000
+		--name = "Live in Night City"
         thirst = "Žízeň",
         hunger = "Hlad",
         fatique = "Unavený",
@@ -880,6 +890,7 @@ local Strings = {
         }
     },
     ["hu-hu"] = { -- Hungarian thanks to Ilyatim2000
+		--name = "Live in Night City"
         thirst = "Szomjúság",
         hunger = "Éhezés",
         fatigue = "Fáradtság",
@@ -968,6 +979,7 @@ local Strings = {
         }
     },
     ["tr-tr"] = { -- Turkish thanks to Ilyatim2000
+		--name = "Live in Night City"
         thirst = "Susuzluk",
         hunger = "Açlik",
         fatigue = "Yorgunluk",
@@ -1056,6 +1068,7 @@ local Strings = {
         }
     },
     ["ar-ar"] = { -- Arabic
+		--name = "Live in Night City"
         thirst = "Thirst",
         hunger = "Hunger",
         fatigue = "Fatigue",
@@ -1144,94 +1157,96 @@ local Strings = {
         }
     },
     ["jp-jp"] = { -- Japanese
-        thirst = "Thirst",
-        hunger = "Hunger",
-        fatigue = "Fatigue",
+		--name = "Live in Night City"
+        thirst = "脱水度",
+        hunger = "空腹度",
+        fatigue = "疲労度",
         step = {
-            thirst = {"You are hydrated, ", "Low Dehydration, ", "Dehydration, ", "Severe Dehydration, "},
-            hunger = {"You are fed, ", "Low Undernourishment, ", "Undernourishment, ", "Severe Undernourishment, "},
-            fatigue = {"You are rested, ", "Low Exhaustion, ", "Exhaustion, ", "Severe Exhaustion, "}
+            thirst = {"十分な水分補給, ", "水分不足, ", "脱水症状を発症, ", "オーバーヒート, "},
+            hunger = {"十分なエネルギー, ", "エネルギー不足, ", "低血糖を発症, ", "重度の身体虚弱, "},
+            fatigue = {"疲労感なし, ", "睡眠不足, ", "過労による精神異常, ", "脳機能障害を発症, "}
         },
         settings = {
             category = {
-                game = "Game Settings",
-                thirst = "Thirst Settings",
-                hunger = "Hunger Settings",
-                fatigue = "Fatigue Settings",
-                display = "Display Settings"
+                game = "ゲーム設定",
+                thirst = "脱水度設定",
+                hunger = "空腹度設定",
+                fatigue = "疲労度設定",
+                display = "表示設定"
             },
             options = {
                 game = {
                     gamepad = {
-                        label = "Gamepad",
-                        description = "Enable/Disable Gamepad Support (Left D-pad)"
+                        label = "ゲームパッド",
+                        description = "ゲームパッドサポート (左十字キー)"
                     },
                     difficulty = {
-                        label = "Difficulty",
-                        description = "Defines the amount of debuffs applied when your needs are low.",
+                        label = "難易度",
+                        description = "食事や休息が十分でない時のデバフ量を設定します。",
                         mode = {
-                            [1] = "Easy",
-                            [2] = "Normal",
-                            [3] = "Hard"
+                            [1] = "イージー",
+                            [2] = "ノーマル",
+                            [3] = "ハード"
                         }
                     }
                 },
                 thirst = {
                     dayPool = {
-                        label = "Thirst reserve (in-game days)",
-                        description = "Sets thirst reserve in number of game days."
+                        label = "脱水度キープ時間（ゲーム内日数）",
+                        description = "脱水度が維持される時間をゲーム日数で設定します。"
                     },
                     regenMultiplier = {
-                        label = "Thirst regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to thirst."
+                        label = "脱水度回復倍率",
+                        description = "脱水度を回復させる際の倍率を設定します。"
                     },
                     costMultiplier = {
-                        label = "Thirst cost multiplier",
-                        description = "Sets the multiplier on all costs applied to thirst."
+                        label = "脱水コスト倍率",
+                        description = "脱水度にかかるコストの倍率を設定します。"
                     }
                 },
                 hunger = {
                     dayPool = {
-                        label = "Hunger reserve (in-game days)",
-                        description = "Sets hunger reserve in number of game days."
+                        label = "空腹度キープ時間（ゲーム内日数）",
+                        description = "空腹度が維持される時間をゲーム日数で設定します。"
                     },
                     regenMultiplier = {
-                        label = "Hunger regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to hunger."
+                        label = "空腹度回復倍率",
+                        description = "空腹度を回復させる際の倍率を設定します。"
                     },
                     costMultiplier = {
-                        label = "Hunger cost multiplier",
-                        description = "Sets the multiplier on all costs applied to hunger."
+                        label = "空腹度コスト倍率",
+                        description = "空腹度にかかるコストの倍率を設定します。"
                     }
                 },
                 fatigue = {
                     dayPool = {
-                        label = "Fatigue reserve (in-game days)",
-                        description = "Sets fatigue reserve in number of game days."
+                        label = "疲労度キープ時間（ゲーム内日数）",
+                        description = "疲労度が維持される時間をゲーム日数で設定します。"
                     },
                     regenMultiplier = {
-                        label = "Fatigue regeneration multiplier",
-                        description = "Sets the multiplier on all regenerations applied to fatigue."
+                        label = "疲労度回復倍率",
+                        description = "疲労度を回復させる際の倍率を設定します。"
                     },
                     costMultiplier = {
-                        label = "Fatigue cost multiplier",
-                        description = "Sets the multiplier on all costs applied to fatigue."
+                        label = "疲労度コスト倍率",
+                        description = "疲労度にかかるコストの倍率を設定します。"
                     }
                 },
                 display = {
                     notif = {
-                        label = "Notifications",
-                        description = "Enable/Disable the display of automatic needs level notifications."
+                        label = "自動通知",
+                        description = "自動通知の表示を設定します。"
                     },
                     warning = {
-                        label = "Status warning",
-                        description = "Enable/Disable display of detailed status warning during notifications."
+                        label = "詳細な警告",
+                        description = "通知時の詳細な警告表示を設定します。"
                     }
                 }
             }
         }
     },
     ["kr-kr"] = { -- Korean
+	--	name = "Live in Night City"
         thirst = "Thirst",
         hunger = "Hunger",
         fatigue = "Fatigue",
@@ -1320,6 +1335,7 @@ local Strings = {
         }
     },
     ["zh-cn"] = { -- Simplified Chinese
+		--name = "Live in Night City"
         thirst = "Thirst",
         hunger = "Hunger",
         fatigue = "Fatigue",
@@ -1408,6 +1424,7 @@ local Strings = {
         }
     },
     ["zh-tw"] = { -- Traditional Chinese
+		--name = "Live in Night City"
         thirst = "Thirst",
         hunger = "Hunger",
         fatigue = "Fatigue",
@@ -1496,6 +1513,7 @@ local Strings = {
         }
     },
     ["th-th"] = { -- Thai
+		--name = "Live in Night City"
         thirst = "Thirst",
         hunger = "Hunger",
         fatigue = "Fatigue",

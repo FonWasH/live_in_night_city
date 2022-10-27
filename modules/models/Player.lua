@@ -34,6 +34,10 @@ function Player:new()
         eat = false,
         shower = false,
         rest = false,
+		cafe = false,
+		tea = false,
+		wait = false,
+		stroke = false,
         sleep = false
         --sex = false --wip
     }
@@ -54,7 +58,6 @@ end
 
 
 -- DaniLt on nexusmods forums came up with this good way to search for sub strings
--- Had thought to try it this way too, but am too much of a noob at Lua to get the syntax right
 function Player:getScenePos()
     local player = Game.GetPlayer()
     local playerPos = player:GetWorldPosition()
@@ -65,25 +68,57 @@ function Player:getScenePos()
 		(playerPos.z >= (restPos.z - restPos.zSlack)) and (playerPos.z <= (restPos.z + restPos.zSlack)) then
 			if string.find(location, "Bed") ~= nil then
 				self.actionRegen.sleep = true
-				--Game.PrintHealth()
 				print("Sleeping in bed")
 				Notif.show()	
 			elseif string.find(location, "Couch") ~= nil then
 				self.state.enable = true
 				self.actionRegen.rest = true
-				--Game.PrintHealth()
 				print("Resting on couch")
 				Notif.show()
 			elseif string.find(location, "Bar") ~= nil then
 				self.state.enable = true
 				self.actionRegen.rest = true
-				--Game.PrintHealth()
 				print("Resting at bar")
+				Notif.show()
+			elseif string.find(location, "Stand") ~= nil then
+				self.state.enable = true
+				self.actionRegen.wait = true
+				print("Resting at an Obstacle")
+				Notif.show()
+			elseif string.find(location, "Stroke") ~= nil then
+				self.state.enable = true
+				self.actionRegen.stroke = true
+				print("Stroke a Pet")
+				Notif.show()
+			elseif string.find(location, "Cafe") ~= nil then
+				self.state.enable = true
+				self.actionRegen.cafe = true
+				print("Drink Coffee")
+				Notif.show()
+			elseif string.find(location, "Tea") ~= nil then
+				self.state.enable = true
+				self.actionRegen.tea = true
+				print("Drink Tea")
+				Notif.show()
+			elseif string.find(location, "Work") ~= nil then
+				self.actionCost.melee = true
+				print("Working")
+				Notif.show()
+			elseif string.find(location, "Act") ~= nil then
+				self.actionCost.sprint = true
+				print("Acting")
+				Notif.show()
+			elseif string.find(location, "Drink") ~= nil then
+				self.actionCost.sprint = true
+				print("Drinking")
+				Notif.show()
+			elseif string.find(location, "Hack") ~= nil then
+				self.actionCost.jump = true
+				print("Hacking")
 				Notif.show()
 			elseif string.find(location, "Shower") ~= nil then
 				self.state.enable = true
 				self.actionRegen.shower = true
-				--Game.PrintHealth()
 				print("Taking a shower")
 				Notif.show()
 			end
